@@ -1,0 +1,152 @@
+html {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #515151;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 38rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+.header__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+  font-size: 1.25rem;
+}
+
+.header__link {
+  color: #505050;
+  text-decoration: none;
+}
+
+.header__small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.social__item {
+  display: inline-flex;
+  margin-left: 0.6rem;
+}
+
+.social__link {
+  display: inline-flex;
+  color: #505050;
+  text-decoration: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+  opacity: 0.8;
+}
+
+.post {
+  margin-bottom: 4em;
+}
+
+.post__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #303030;
+  font-size: 2rem;
+}
+
+.post__date {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+.post__content {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.post__links {
+  display: flex;
+  margin-top: 1.8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.post__link {
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 0.8rem;
+}
+
+.post__link:hover,
+.post__link:focus {
+  color: #268bd2;
+}
+
+.post__link svg {
+  margin-bottom: -0.1rem;
+  margin-right: 0.3rem;
+  fill: #303030;
+}
+
+.post__link:not(:last-child) {
+  margin-right: 1.8rem;
+}
+
+.post__image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* media-queries */
+@media (min-width: 38em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__small {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
