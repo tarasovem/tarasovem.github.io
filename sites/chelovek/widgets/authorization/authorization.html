@@ -1,0 +1,25 @@
+<form class="form form_column" action="" method="post">
+  <div class="row form__row">
+    <div class="form__group">
+      <label class="form__label" for="email">E-mail*</label>
+      <input class="form__input form__input_small" type="email" id="email" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="password">Пароль*</label>
+      <input class="form__input form__input_small" type="password" id="password">
+    </div>
+  </div>
+  <p class="form__help">У вас нет аккаунта?
+    <button class="form__link" type="button" id="registration">Зарегистрироваться</button></p>
+  <div class="form__footer">
+    <button class="button button_outline" type="submit">Вход</button>
+    <a class="form__link" href="#">Забыли пароль?</a>
+  </div>
+</form>
+
+<!-- скрипт вставлен локально, чтобы событие регистрировалось при его рендеринге -->
+<script>
+  $('#registration').on("click", function () {
+    $.mw.open('registration', null, {close: true});
+  });
+</script>

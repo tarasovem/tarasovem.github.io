@@ -1,0 +1,52 @@
+<form class="form form_column_two" action="" method="post">
+  <div class="row form__row">
+    <div class="form__group">
+      <label class="form__label" for="name">Имя*</label>
+      <input class="form__input form__input_small" type="text" id="name" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="country">Страна*</label>
+      <input class="form__input form__input_small" type="text" id="country" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="surname">Фамилия*</label>
+      <input class="form__input form__input_small" type="text" id="surname" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="town">Город*</label>
+      <input class="form__input form__input_small" type="text" id="town" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="email">E-mail*</label>
+      <input class="form__input form__input_small" type="email" id="email" required placeholder=" ">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="additionally">Дополнительный контакт для связи</label>
+      <input class="form__input form__input_small" type="text" id="additionally">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="password">Пароль*</label>
+      <input class="form__input form__input_small" type="password" id="password">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="password-repeat">Повторите пароль*</label>
+      <input class="form__input form__input_small" type="password" id="password-repeat">
+    </div>
+  </div>
+  <p class="form__agreement">
+    <input type="checkbox" name="agreement" id="agreement">
+    <label for="agreement">Я соглашаюсь с условиями обработки персональных данных и &nbsp;<a href="#"><b>пользовательским соглашением</b></a></label>
+  </p>
+  <div class="form__footer form__footer_many-elements">
+    <button class="button button_outline" type="submit">Зарегистрироваться</button>
+    <p class="form__warning form__warning_position_left">Пароли не совпадают</p>
+    <button class="form__link" type="button" id="authorization-already">Я уже зарегистрирован</button>
+  </div>
+</form>
+
+<!-- скрипт вставлен локально, чтобы событие регистрировалось при его рендеринге -->
+<script>
+  $('#authorization-already').on("click", function () {
+    $.mw.open('authorization', null, {close: true});
+  });
+</script>
