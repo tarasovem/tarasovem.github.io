@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["$(\".toggle\").on(\"click\", function () {\n  $(this).toggleClass(\"is-active\")\n});"],"file":"main.js"}

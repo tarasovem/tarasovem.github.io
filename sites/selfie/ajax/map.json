@@ -1,0 +1,51 @@
+[
+  {
+    "address": "МО, Раменское, Северное ш., 7вл2",
+    "coord": [55.58383556916007, 38.220287999999904],
+    "preview": "img/temp/preview-video.png",
+    "origin": "https://youtu.be/ScMzIvxBSi4",
+    "video": true
+  },
+  {
+    "address": "Москва, Южнопортовая ул., 22, стр.3",
+    "coord": [55.70513806902534, 37.689428499999934],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  },
+  {
+    "address": "МО, Балашиха, Носовихинское ш., 6А",
+    "coord": [55.74960101646119, 37.88609114945981],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  },
+  {
+    "address": "Москва, ул. Барышиха, вл39",
+    "coord": [55.849968568890795, 37.341268499999984],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  },
+  {
+    "address": "МО, Истра, Железнодорожная ул., 62Б, стр.3",
+    "coord": [55.910200402459516, 36.81367346159357],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  },
+  {
+    "address": "МО, Мытищи, Трудовавя ул., вл33",
+    "coord": [55.89089317397192, 37.71208627474855],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  },
+  {
+    "address": "МО, Орехово-Зуево, Егорьевская ул., 13",
+    "coord": [55.79122242812529, 38.97042803834531],
+    "preview": "img/temp/map-example.jpg",
+    "origin": "img/temp/map-example.jpg",
+    "video":  null
+  }
+]

@@ -1,0 +1,145 @@
+.mw_theme_harvest {
+  z-index: 9999;
+  background-color: #ffffff;
+  width: 600px;
+  min-height: 50px;
+  max-width: 100%;
+  min-width: 320px;
+  border: none;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: opacity 0.3s ease-out 0.3s, -webkit-transform 0.3s ease-out 0.3s;
+  -moz-transition: opacity 0.3s ease-out 0.3s, -moz-transform 0.3s ease-out 0.3s;
+  -o-transition: opacity 0.3s ease-out 0.3s;
+  transition: opacity 0.3s ease-out 0.3s, transform 0.3s ease-out 0.3s;
+}
+
+.mw_theme_harvest.mw_state_opened {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mw_theme_harvest .mw__title {
+  padding: 24px 36px 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #101010;
+  background-color: #ffcb06;
+}
+
+.mw_theme_harvest .mw__content {
+  color: #101010;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.mw_theme_harvest .mw__close {
+  width: 18px;
+  height: 18px;
+  background: 50% 50% no-repeat url("../../img/close.svg");
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mw-overlay_theme_harvest {
+  background-color: #101010;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.mw_theme_harvest .mw__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 18px 20px;
+}
+
+.mw_theme_harvest .mw__subtitle {
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b6965;
+}
+
+.mw_theme_harvest .mw__label {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mw_theme_harvest .mw__label_checkbox::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  background-image: url("../../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mw_theme_harvest .mw__label_radio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background-image: url("../../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mw_theme_harvest .mw__label:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.mw_theme_harvest input[type="checkbox"]:checked + label.mw__label_checkbox::before {
+  background-image: url("../../img/checkbox-on.svg");
+  background-size: 19px 22px;
+  height: 17px;
+  width: 19px;
+  background-position: left top -3px;
+}
+
+.mw_theme_harvest input[type="radio"]:checked + label.mw__label_radio::before {
+  background-image: url("../../img/radio-on.svg");
+}
+
+.mw_theme_harvest .mw__fieldset {
+  flex: auto;
+  margin: 14px 18px;
+}
+
+.mw_theme_harvest .mw__button {
+  width: 200px;
+  height: 32px;
+  border: 1px solid #ffcb06;
+  background-color: #ffcb06;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.12px;
+  color: #101010;
+}

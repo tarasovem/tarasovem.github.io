@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selfie - мойки самообслуживания</title>
+  <link rel="stylesheet" href="libs/mw/mw.selfie.css">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/normalize.min.css">
+  <link rel="stylesheet" href="style/main.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2e9d5144-2e7b-4a5b-a392-7eec60677820&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/ymap.js"></script>
+  <script src="libs/jquery.min.js"></script>
+</head>
+<body>
+<header class="page-header ">
+  <div class="page-header__wrapper">
+    <div class="logo"><img src="img/logo.png" alt="Логотип кампании" width="239" height="56"></div>
+    <button class="toggle page-header__toggle" type="button">
+        <span class="toggle__box">
+          <span class="toggle__inner"></span>
+        </span>
+    </button>
+    <nav class="page-nav page-header__page-nav">
+      <ul class="page-nav__list">
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#">О мойках</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#">Карта моек</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#">Как работает</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#">Акции</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link page-nav__link_icon" href="#">Наш инстаграм</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden"> Мойки самообслуживания Selfie</h1>
+  <section class="map" id="map">
+    <h2 class="visually-hidden">Карта моек</h2>
+
+  </section>
+  <section class="stocks">
+    <h2 class="visually-hidden">Акции</h2>
+    <div class="stocks__wrapper">
+      <ul class="stocks__list">
+        <li class="stocks__item">
+          <button class="stocks__button" type="button">
+            <span class="stocks__description stocks__description_lead">
+              Помыл два раза в месяц – почти спортсмен!
+            </span>
+            <span class="stocks__description">
+              Курс зимнего вождения ждёт тебя!
+            </span>
+          </button>
+        </li>
+        <li class="stocks__item">
+          <button class="stocks__button stocks__button_bg-dark" type="button">
+            <span class="stocks__description stocks__description_lead">
+              Помыл Авто больше, чем на 250&nbsp;р
+            </span>
+            <span class="stocks__description">
+              Получи 5л зимнего стеклоочистителя -30!
+            </span>
+          </button>
+        </li>
+        <li class="stocks__item">
+          <button class="stocks__button" type="button">
+            <span class="stocks__description stocks__description_lead">
+              Получи 5л зимнего стекло-очистителя за мойку!!!
+            </span>
+          </button>
+        </li>
+        <li class="stocks__item">
+          <button class="stocks__button stocks__button_bg-dark" type="button">
+            <span class="stocks__description stocks__description_lead">
+              Хочешь ПитБайк?
+            </span>
+            <span class="stocks__description">
+              Сделай фото своего авто!
+            </span>
+          </button>
+        </li>
+        <li class="stocks__item">
+          <button class="stocks__button" type="button">
+            <span class="stocks__description stocks__description_lead">
+              Цвет имеет значение!
+            </span>
+            <span class="stocks__description">
+              Мойся бесплатно!
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <div class="advantages__wrapper">
+      <ul class="advantages__list">
+        <li class="item advantages__item">
+          <header class="item__header">
+            <div class="item__image">
+              <img src="img/advantages-1.png" alt="Машина в мойке" width="91" height="75">
+            </div>
+            <p class="item__title">
+              Наши мойки экологически чистые
+            </p>
+          </header>
+          <p class="item__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+            vel facilisis.
+          </p>
+        </li>
+        <li class="item advantages__item">
+          <header class="item__header">
+            <div class="item__image">
+              <img src="img/advantages-2.png" alt="Намыленная машина" width="100" height="80">
+            </div>
+            <p class="item__title">
+              Мы используем очищенную воду
+            </p>
+          </header>
+          <p class="item__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+            vel facilisis.
+          </p>
+        </li>
+        <li class="item advantages__item">
+          <header class="item__header">
+            <div class="item__image">
+              <img src="img/advantages-3.png" alt="Машину ополаскивают" width="77" height="78">
+            </div>
+            <p class="item__title">
+              Пользоваться мойкой очень просто
+            </p>
+          </header>
+          <p class="item__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+            vel facilisis.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="pros">
+    <h2 class="visually-hidden">Плюсы</h2>
+    <div class="pros__wrapper">
+      <ul class="pros__list">
+        <li class="pros__item">
+          <div class="pros__image">
+            <img src="img/pros-1.png" alt="Аппарат для мойки" width="59" height="54">
+          </div>
+          <div class="pros__text">
+            <p class="pros__title">Напор воды</p>
+            <p class="pros__description">тщательное мытье</p>
+          </div>
+        </li>
+        <li class="pros__item">
+          <div class="pros__image">
+            <img src="img/pros-2.png" alt="Пульверизатор" width="38" height="54">
+          </div>
+          <div class="pros__text">
+            <p class="pros__title">Автокосметика</p>
+            <p class="pros__description">бережный уход</p>
+          </div>
+        </li>
+        <li class="pros__item">
+          <div class="pros__image">
+            <img src="img/pros-3.png" alt="Моющее средство" width="51" height="53">
+          </div>
+          <div class="pros__text">
+            <p class="pros__title">Моющие средства</p>
+            <p class="pros__description">безопасно</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="order">
+    <h2 class="visually-hidden">Последовательность шагов</h2>
+    <div class="order__wrapper">
+      <p class="order__lead">Рекомендуется мыть машину сверху вниз,</p>
+      <p class="order__text">держать пистолет на расстоянии 20-30 мс от кузова</p>
+      <ol class="order__list">
+        <li class="order__item">
+          <a href="https://youtu.be/ScMzIvxBSi4" data-fancybox="order">
+            <div class="order__header">
+              <p class="order__title">Программа</p>
+              <p class="order__name">Замачивание</p>
+              <p class="order__subtitle">для лучшего эффекта</p>
+            </div>
+            <p class="order__desc">
+              Происходит нанесение химического средства с использованием смягченной воды для подготовки к бесконтактной
+              мойке
+            </p>
+          </a>
+        </li>
+        <li class="order__item">
+          <a href="https://youtu.be/ScMzIvxBSi4" data-fancybox="order">
+            <div class="order__header">
+              <p class="order__title">Программа</p>
+              <p class="order__name">Основная мойка</p>
+              <p class="order__subtitle">идеально очищенная поверхность</p>
+            </div>
+            <p class="order__desc">
+              При давлении 120 бар смягченная, подогретая вода и химическое средство нейтральное для лакокрасочного
+              покрытия которое растворяет жирный налет
+            </p>
+          </a>
+        </li>
+        <li class="order__item">
+          <a href="https://youtu.be/ScMzIvxBSi4" data-fancybox="order">
+            <div class="order__header">
+              <p class="order__title">Программа</p>
+              <p class="order__name">Ополаскивание</p>
+              <p class="order__subtitle">под высоким давлением</p>
+            </div>
+            <p class="order__desc">
+              Это режим ополаскивания от остатков загрязнений и химических средств сетевой водой под давлением 120 бар
+            </p>
+          </a>
+        </li>
+        <li class="order__item">
+          <a href="https://youtu.be/ScMzIvxBSi4" data-fancybox="order">
+            <div class="order__header">
+              <p class="order__title">Программа</p>
+              <p class="order__name">Обработка воском</p>
+              <p class="order__subtitle">защита кузова</p>
+            </div>
+            <p class="order__desc">
+              Обработка воском чистой поверхности лакокрасочного покрытия и создание тонкой защитной пленки.
+            </p>
+          </a>
+        </li>
+        <li class="order__item">
+          <a href="https://youtu.be/ScMzIvxBSi4" data-fancybox="order">
+            <div class="order__header">
+              <p class="order__title">Программа</p>
+              <p class="order__name">Блеск + сушка</p>
+              <p class="order__subtitle">блеск без пятен</p>
+            </div>
+            <p class="order__desc">
+              Кузов промывается деминерализованной водой осушающим и обеспечивающим блеск средством.Позволяет обойтись
+              без
+              вытирания и сушки авто.
+            </p>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2 class="visually-hidden">Галлерея</h2>
+    <div class="gallery__wrapper">
+      <a class="gallery__item" href="img/gallery-1.png" data-fancybox="gallery">
+        <img src="img/gallery-1.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-2.png" data-fancybox="gallery">
+        <img src="img/gallery-2.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item"  href="img/gallery-3.png" data-fancybox="gallery">
+        <img src="img/gallery-3.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-4.png" data-fancybox="gallery">
+        <img src="img/gallery-4.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-5.png" data-fancybox="gallery">
+        <img src="img/gallery-5.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-6.png" data-fancybox="gallery">
+        <img src="img/gallery-6.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-7.png" data-fancybox="gallery">
+        <img src="img/gallery-7.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-8.png" data-fancybox="gallery">
+        <img src="img/gallery-8.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-9.png" data-fancybox="gallery">
+        <img src="img/gallery-9.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-10.png" data-fancybox="gallery">
+        <img src="img/gallery-10.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-11.png" data-fancybox="gallery">
+        <img src="img/gallery-11.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-12.png" data-fancybox="gallery">
+        <img src="img/gallery-12.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-13.png" data-fancybox="gallery">
+        <img src="img/gallery-13.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-14.png" data-fancybox="gallery">
+        <img src="img/gallery-14.png" alt="" width="200" height="200">
+      </a>
+      <a class="gallery__item" href="img/gallery-15.png" data-fancybox="gallery">
+        <img src="img/gallery-15.png" alt="" width="200" height="200">
+      </a>
+    </div>
+  </section>
+</main>
+<script src="libs/mw/mw.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/mw.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

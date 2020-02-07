@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Оплата</title>
+    <link rel="stylesheet" href="lib/datapicker/datepicker.min.css">
+    <link rel="stylesheet" href="lib/selectric/selectric.css">
+    <link rel="stylesheet" href="lib/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/jquery-3.4.1.min.js"></script>
+</head>
+<body class="page-wrapper page-wrapper_payment">
+  <header class="page-header">
+  <button class="page-header__toggle">
+    Открыть меню
+  </button>
+  <div class="page-header__row page-header__row_border-bottom">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo.svg" alt='Детский центр "Neverland"'>
+    </a>
+    <div class="page-header__inner">
+      <div class="page-header__row">
+        <ul class="contacts page-header__contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:71034641416742">Тел. +7-10-34-641-416-742</a>
+          </li>
+          <li class="contacts__item">
+            Torrevieja, Calle Almudena 4
+          </li>
+        </ul>
+        <div class="lang-switcher page-header__lang-switcher">
+          <div class="lang-switcher__wrapper">
+            <button class="lang-switcher__button active" type="button">
+              Русский
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+            <ul class="lang-switcher__list">
+              <li class="lang-switcher__item">
+                <a href="#" class="lang-switcher__link">English</a>
+              </li>
+              <li class="lang-switcher__item">
+                <a href="" class="lang-switcher__link">Espanol</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__row">
+        <nav class="main-nav page-header__main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link_active" href="price.html">Оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link " href="developments.html">События</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Правила</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link " href="reviews.html">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Как добраться</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="page-header__row">
+    <ul class="extra-nav page-header__extra-nav">
+      <li class="extra-nav__item">
+        <a class="extra-nav__link " href="stocks.html">Акции</a>
+      </li>
+      <li class="extra-nav__item">
+        <a class="extra-nav__link" href="#">Поиграем</a>
+      </li>
+      <li class="extra-nav__item">
+        <a class="extra-nav__link" href="#">Отпустим родителей</a>
+      </li>
+      <li class="extra-nav__item">
+        <a class="extra-nav__link" href="#">Узнаем новое</a>
+      </li>
+      <li class="extra-nav__item">
+        <a class="extra-nav__link" href="#">Отметим праздник</a>
+      </li>
+      <li class="extra-nav__item">
+        <a class="extra-nav__link" href="#">Кафе</a>
+      </li>
+    </ul>
+    <div class="page-header__store">
+      <a class="page-header__button" href="#">
+        Магазин
+        <span class="arrow page-header__arrow"></span>
+      </a>
+    </div>
+  </div>
+</header>
+  <ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="index.html">Главная</a>
+  </li>
+  <li class="breadcrumb__item">
+    Оплата
+  </li>
+</ol>
+  <main>
+    <h1 class="page-title">Оплата</h1>
+    <section class="price">
+      <h2 class="visually-hidden">Цены на услуги</h2>
+      <div class="price__wrapper">
+        <table class="table price__table">
+          <thead class="table__header">
+          <tr class="table__row">
+            <th class="table__cell table__cell_type_header"></th>
+            <th class="table__cell table__cell_type_header">Понедельник</th>
+            <th class="table__cell table__cell_type_header">Вторник</th>
+            <th class="table__cell table__cell_type_header">Среда</th>
+            <th class="table__cell table__cell_type_header">Четверг</th>
+            <th class="table__cell table__cell_type_header">Пятница</th>
+            <th class="table__cell table__cell_type_header">Суббота</th>
+            <th class="table__cell table__cell_type_header table__cell_decor-border table__cell_decor-border_right">
+              Воскресенье
+            </th>
+          </tr>
+          </thead>
+          <tbody class="table__body">
+          <tr class="table__row">
+            <td class="table__cell table__cell_first-column">30 минут</td>
+            <td class="table__cell">&mdash;</td>
+            <td class="table__cell">4&nbsp;&euro;</td>
+            <td class="table__cell">4&nbsp;&euro;</td>
+            <td class="table__cell">4&nbsp;&euro;</td>
+            <td class="table__cell">4&nbsp;&euro;</td>
+            <td class="table__cell">4&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_right">4&nbsp;&euro;</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_first-column">1 час</td>
+            <td class="table__cell">&mdash;</td>
+            <td class="table__cell">6&nbsp;&euro;</td>
+            <td class="table__cell">6&nbsp;&euro;</td>
+            <td class="table__cell">6&nbsp;&euro;</td>
+            <td class="table__cell">6&nbsp;&euro;</td>
+            <td class="table__cell">6&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_right">6&nbsp;&euro;</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom table__cell_first-column">4
+              часа
+            </td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">&mdash;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">22&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">22&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">22&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">22&nbsp;&euro;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">22&nbsp;&euro;</td>
+            <td
+              class="table__cell table__cell_decor-border table__cell_decor-border_bottom table__cell_decor-border_right">
+              22&nbsp;&euro;
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="payment">
+      <h2 class="visually-hidden">Форма оплаты</h2>
+      <button class="button payment__button" type="button">Купить
+        <span class="arrow button__arrow"></span>
+      </button>
+      <div class="payment__wrapper">
+        <div class="payment__card">
+          <div class="switch payment__switch">
+            <input class="switch__checkbox visually-hidden" id="switch-input" type="checkbox">
+            <label class="switch__label" for="switch-input">
+              <span class="switch__slider"></span>
+            </label>
+            <span class="switch__subtitle switch__subtitle_before">Билет</span>
+            <span class="switch__subtitle switch__subtitle_after">Абонемент</span>
+          </div>
+          <form class="ticket payment__ticket" method="post">
+            <div class="payment__datepicker error"></div>
+            <input type="text" class="visually-hidden" id="datepicker-input" name="ticket-date" required>
+            <div class="ticket__inner">
+              <div class="input error ticket__item">
+                <span class="input__title">Время</span>
+                <div class="input__inner">
+                  <input class="input__radio visually-hidden" type="radio" name="ticket-time" id="time-30-min">
+                  <label class="input__label" for="time-30-min">30 минут</label>
+                  <input class="input__radio visually-hidden" type="radio" name="ticket-time" id="time-1-hour">
+                  <label class="input__label" for="time-1-hour">1 час</label>
+                  <input class="input__radio visually-hidden" type="radio" name="ticket-time" id="time-4-hour">
+                  <label class="input__label" for="time-4-hour">4 часа</label>
+                </div>
+                <span class="input__warning">
+                  Выберите время
+                </span>
+              </div>
+              <div class="input ticket__item">
+                <label class="input__title" for="ticket-name">Имя</label>
+                <input class="input__control" id="ticket-name" type="text" name="ticket-user-name" required>
+                <span class="input__warning">
+                  Введите имя
+                </span>
+              </div>
+              <div class="input ticket__item">
+                <label class="input__title" for="ticket-email">E-mail</label>
+                <input class="input__control" id="ticket-email" type="email" name="ticket-user-email" required>
+                <span class="input__warning">
+                  Введите правильный адрес почты
+                </span>
+              </div>
+              <div class="summary ticket__item">
+                <span class="summary__price">22&nbsp;&euro;</span>
+                <button class="summary__submit" type="submit">Оплатить</button>
+              </div>
+            </div>
+          </form>
+          <form class="subscription payment__subscription" method="post">
+            <div class="subscription__wrapper">
+              <div class="subscription__inner">
+                <div class="input error subscription__item">
+                  <span class="input__title">Месяц</span>
+                  <select class="input__select" name="input__select">
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                  </select>
+                  <span class="input__warning">
+                    Выберите месяц
+                  </span>
+                </div>
+                <div class="input subscription__item">
+                  <label class="input__title" for="subscription-name">Имя</label>
+                  <input class="input__control" id="subscription-name" type="text" name="subscription-user-name" required>
+                  <span class="input__warning">
+                    Введите имя
+                  </span>
+                </div>
+                <div class="input subscription__item">
+                  <label class="input__title" for="subscription-email">E-mail</label>
+                  <input class="input__control" id="subscription-email" type="email" name="subscription-user-email" required>
+                  <span class="input__warning">
+                    Введите правильный адрес почты
+                  </span>
+                </div>
+              </div>
+              <div class="summary subscription__summary">
+                <span class="summary__price">22&nbsp;&euro;</span>
+                <button class="summary__submit" type="submit">Оплатить</button>
+              </div>
+            </div>
+          </form>
+          <div class="result payment__result">
+            <div class="result__wrapper">
+              <p class="result__header">
+                Вы успешно совершили приобретение билета!
+              </p>
+              <div class="result__body">
+                <div class="result__item">
+                  <span class="result__title">Время:</span>
+                  <span class="result__description">4 часа</span>
+                </div>
+                <div class="result__item">
+                  <span class="result__title">Имя:</span>
+                  <span class="result__description">Dkjtgdi</span>
+                </div>
+                <div class="result__item">
+                  <span class="result__title">Дата:</span>
+                  <span class="result__description">20 декабря 2019 </span>
+                </div>
+                <div class="result__item">
+                  <span class="result__title">E-mail:</span>
+                  <span class="result__description">dkjtgdiiiiioo@gmail.com</span>
+                </div>
+                <div class="result__item">
+                  <span class="result__title">К оплате:</span>
+                  <span class="result__description">22 €</span>
+                </div>
+              </div>
+              <div class="result__footer">
+                <p class="result__info">
+                  По вопросам обращайтесь по номеру: +7-10-34-641-416-742
+                  или на почту: <a href="mailto:neverlandinfancii9@gmail.com" class="result__link">neverlandinfancii9@gmail.com</a>
+                </p>
+                <button class="result__return" type="button">Купить ещё</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer payment__offer">
+      <h2 class="visually-hidden">Предложение по абоменту</h2>
+      <p class="offer__lead">Сэкономьте с абонементом на <span class="offer__highlighting">ноябрь</span> по цене <span class="offer__highlighting">150&nbsp;€</span></p>
+      <div class="offer__wrapper">
+        <table class="table offer__table">
+          <thead class="table__header">
+          <tr class="table__row">
+            <th class="table__cell table__cell_type_header"></th>
+            <th class="table__cell table__cell_type_header">Понедельник</th>
+            <th class="table__cell table__cell_type_header">Вторник</th>
+            <th class="table__cell table__cell_type_header">Среда</th>
+            <th class="table__cell table__cell_type_header">Четверг</th>
+            <th class="table__cell table__cell_type_header">Пятница</th>
+            <th class="table__cell table__cell_type_header">Суббота</th>
+            <th class="table__cell table__cell_type_header table__cell_decor-border table__cell_decor-border_right">Воскресенье</th>
+          </tr>
+          </thead>
+          <tbody class="table__body">
+          <tr class="table__row">
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom table__cell_first-column">4 часа</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">&mdash;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom" colspan="4">150 €</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom">&mdash;</td>
+            <td class="table__cell table__cell_decor-border table__cell_decor-border_bottom table__cell_decor-border_right">&mdash;</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="index-sales">
+      <h2 class="visually-hidden">Акции</h2>
+      <div class="row row_margin-bottom_large">
+        <div class="col-1-2 col_order-second">
+          <div class="section-image">
+            <div class="section-image__primary">
+              <img src="img/index-sales-image.png" alt="Дети, играющие в супрегероев" width="400" height="400">
+            </div>
+            <div class="section-image__secondary section-image__secondary_position-right-center section-image_bg-green">
+              <div class="section-image__text">
+                <div class="section-image__lead">- 33 %</div>
+                <div class="section-image__description">На второго ребёнка</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-2">
+          <h2 class="section-title index-sales__section-title">Акции</h2>
+          <p class="text index-sales__text">
+            «Neverland» — праздник для детей и их родителей!
+          </p>
+          <a class="button index-sales__button" href="stocks.html">
+            Посмотреть все
+            <span class="arrow button__arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="page-footer page-footer_with-bg">
+  <div class="container page-footer__container ">
+    <div class="page-footer__inner">
+      <div class="page-footer__column">
+        <p class="page-footer__title">Телефон</p>
+        <p class="page-footer____description">+7-10-34-641-416-742</p>
+      </div>
+      <div class="page-footer__column">
+        <p class="page-footer__title">Адрес</p>
+        <p class="page-footer____description">Torrevieja,<br> Calle Almudena 4</p>
+      </div>
+      <div class="work-time">
+        <p class="page-footer__title">Рабочее время</p>
+        <p class="page-footer____description">Вторник — Воскресенье,<br> 9:00 — 21:00</p>
+      </div>
+      <div class="page-footer__column page-footer__column_type_social">
+        <p class="page-footer__title">Узнайте больше</p>
+        <ul class="page-footer__list">
+          <li class="page-footer__link">
+            <a class="page-footer__link" href="#">Facebook
+              <span class="page-footer__icon page-footer__icon_facebook"></span>
+            </a>
+          </li>
+          <li class="page-footer__link">
+            <a class="page-footer__link" href="#">Instagram
+              <span class="page-footer__icon page-footer__icon_instagram"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__inner">
+      <p class="feedback page-footer__feedback">Мы будем рады вашим письмам —
+        <a class="feedback__link" href="mailto:neverlandinfancii9@gmail.com">
+          neverlandinfancii9@gmail.com
+        </a>
+      </p>
+      <p class="copyright">
+        © Neverland, 2019. Все права защищены.
+      </p>
+    </div>
+  </div>
+</footer>
+    <script src="lib/datapicker/datepicker.min.js"></script>
+    <script src="lib/selectric/jquery.selectric.min.js"></script>
+    <script src="lib/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="lib/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

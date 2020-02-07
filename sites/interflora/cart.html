@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inerflora - Корзина</title>
+  <link rel="stylesheet" href="libs/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="libs/intl-tel-input-master/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="libs/mw/mw.harvest.css">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/normalize.min.css">
+  <link rel="stylesheet" href="style/main.min.css">
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="libs/intl-tel-input-master/js/intlTelInput-jquery.min.js"></script>
+  <script src="libs/intl-tel-input-master/js/intlTelInput.min.js"></script>
+  <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="libs/lazysizes.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="logo page-header__logo">
+      <div class="logo">
+        <img src="img/logo-harvest.png" alt='Логотип программы лояльности "Урожай"' width="222" height="52">
+      </div>
+      <div class="logo">
+        <img src="img/logo-bank.png" alt='Логотип "Россельхозбанка"' width="281" height="58">
+      </div>
+    </div>
+    <div class="page-header__cart">Корзина</div>
+    <div class="page-header__user">Выход</div>
+  </div>
+</header>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="#">Международная доставка цветов и подарков</a>
+  </li>
+  <li class="breadcrumb__item">
+    Корзина
+  </li>
+</ol>
+
+<main class="page-main">
+  <h1 class="page-main__title">Корзина</h1>
+
+  <div class="cart">
+    <div class="cart__item">
+      <div class="cart__img">
+        <img class="lazyload" src="img/cart-1.jpg" alt="" width="165" height="330">
+      </div>
+      <div class="cart__description">
+        <h2 class="cart__title">Sansevieria</h2>
+        <div class="cart__article">SP637</div>
+        <div class="cart__item-info">Небольшой</div>
+      </div>
+      <div class="cart__price">
+        <span class="cart__current-price">4 425 руб.</span>
+      </div>
+      <div class="cart__item-del">Закрыть</div>
+    </div>
+    <div class="cart__item">
+      <div class="cart__img">
+        <img class="lazyload" src="img/cart-2.png" alt="" width="86" height="125">
+      </div>
+      <div class="cart__description">
+        <h2 class="cart__title">Бесплатная открытка</h2>
+        <div class="cart__article">SP637</div>
+        <textarea maxlength="250" style="height: 86px;"
+                  placeholder="Напишите ваше сообщение и не забудьте подписаться!"></textarea>
+        <div class="cart__item-info cart__item-info_small">
+          Текст открытки не должен превышать 250 символов. <br>
+          Осталось символов:
+          <span class="symbol_count">250</span>
+        </div>
+      </div>
+      <div class="cart__price">
+        <span class="cart__current-price">0 руб.</span>
+      </div>
+      <div class="cart__item-del">Закрыть</div>
+    </div>
+    <div class="cart__item">
+      <div class="cart__img">
+        <img class="lazyload" src="img/cart-3.jpg" alt="" width="330" height="330">
+      </div>
+      <div class="cart__description">
+        <h2 class="cart__title">Timeless love</h2>
+        <div class="cart__article">MCF274</div>
+        <div class="cart__item-info">Небольшой</div>
+      </div>
+      <div class="cart__price">
+        <span class="cart__current-price">4 950 руб.</span>
+      </div>
+      <div class="cart__item-del">Закрыть</div>
+    </div>
+    <script>
+      $(function () {
+        $('.cart__description textarea').on("load propertychange keyup input paste",
+          function () {
+            var limit = $(this).attr('maxlength');
+            var remainingChars = limit - $(this).val().length;
+            if (remainingChars <= 0) {
+              $(this).val($(this).val().substring(0, limit));
+            }
+            $(this).next('.cart__item-info').find('.symbol_count').text(remainingChars <= 0 ? 0 : remainingChars);
+          });
+      });
+    </script>
+  </div>
+  <div class="order-form">
+    <form action="">
+      <div class="order-form__item">
+        <div class="order-form__main">
+          <div class="order-form__main-item">
+            <h2>Ваши данные</h2>
+            <div class="order-form__field">
+              <label class="order-form__label">Название компании</label>
+              <textarea class="order-form__textarea" name="" rows="3"></textarea>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Контактное лицо</label>
+              <input class="order-form__input" type="text">
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Телефон*</label>
+              <div class="order-form__phone">
+                <div class="order-form__flag-container"></div>
+                <input class="order-form__input" type="text">
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">E-mail*</label>
+              <input class="order-form__input" type="text">
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Юридический адрес</label>
+              <textarea class="order-form__textarea" name="" rows="3"></textarea>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">ИНН</label>
+              <input class="order-form__input" type="text">
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">КПП</label>
+              <input class="order-form__input" type="text">
+            </div>
+          </div>
+          <div class="order-form__main-item">
+            <h2>Данные получателя</h2>
+            <div class="order-form__field order-form__field_date">
+              <label class="order-form__label">Дата доставки</label>
+              <div class="order-form__date">
+                <input class="order-form__input" type="text" value="18.10.2019">
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Имя и фамилия*</label>
+              <input class="order-form__input" type="text">
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Телефон*</label>
+              <div class="order-form__phone">
+                <div class="order-form__flag-container"></div>
+                <input class="order-form__input" type="text">
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Дополнительный телефон*</label>
+              <div class="order-form__phone">
+                <div class="order-form__flag-container"></div>
+                <input class="order-form__input" type="text">
+              </div>
+            </div>
+            <div class="order-form__field order-form__field_country">
+              <label class="order-form__label">Страна</label>
+              <span class="order-form__country">Россия</span>
+            </div>
+            <div class="order-form__field order-form__field_city">
+              <label class="order-form__label">Город*</label>
+              <span class="order-form__city">
+                  Не выбран
+                <a class="js-city-link" href="javascript:void(0);">Изменить</a>
+                <div class="order-form__input-container">
+                  <input class="order-form__input" type="text" autocomplete="off">
+                  <img class="lazyload" src="" alt="">
+                  <span class="order-form__close">✕</span>
+                </div>
+              </span>
+              <script>
+                $(function () {
+                  $('.js-city-link').on('click', function () {
+                    $(this)
+                      .next('.order-form__input-container')
+                      .css('display', 'flex');
+                    $(this).hide();
+                  });
+                  $('.order-form__close').on('click', function () {
+                    $(this)
+                      .parents('.order-form__input-container')
+                      .css('display', 'none');
+                    $(this)
+                      .parents('.order-form__city')
+                      .find('.js-city-link')
+                      .show();
+                  });
+
+                  $('.order-form__date input').datepicker({
+                    dayNames: ["Понедельник", "Вторник", "Среда", "Четверг",
+                      "Пятница", "Суббота", "Воскресенье"
+                    ],
+                    dayNamesMin: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
+                    monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май",
+                      "Июнь", "Июль", "Август", "Сентябрь", "Октябрь",
+                      "Ноябрь", "Декабрь"
+                    ],
+                    dateFormat: 'dd.mm.yy'
+                  });
+                });
+              </script>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Адрес доставки*</label>
+              <input class="order-form__input" type="text">
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Компания</label>
+              <div class="order-form__notes">
+                <input class="order-form__input" type="text">
+                <span class="order-form__notes-description">Укажите название компании или гостиницы, если доставка не на домашний адрес</span>
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Пожелания к заказу</label>
+              <textarea class="order-form__textarea" name="" rows="3"></textarea>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label">Индекс</label>
+              <input class="order-form__input" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-form__item">
+        <div class="order-form__top">
+          <h2>Подтверждение заказа</h2>
+        </div>
+        <div class="order-form__main">
+          <div class="order-form__confirm">
+            <div class="order-form__confirm-row order-form__confirm-row_heading">
+              <div class="order-form__confirm-name">
+                <span>Наименование</span>
+              </div>
+              <div class="order-form__confirm-price">
+                <span>Стоимость</span>
+              </div>
+              <div class="order-form__confirm-del">
+                <span>Удалить</span>
+              </div>
+            </div>
+            <div class="order-form__confirm-row">
+              <div class="order-form__confirm-name">
+                <span>Sansevieria</span>
+              </div>
+              <div class="order-form__confirm-price">
+                <span>4 425 руб.</span>
+              </div>
+              <div class="order-form__confirm-del">
+                <span>✖</span>
+              </div>
+            </div>
+            <div class="order-form__confirm-row">
+              <div class="order-form__confirm-name">
+                <span>Бесплатная открытка</span>
+              </div>
+              <div class="order-form__confirm-price">
+                <span>0 руб.</span>
+              </div>
+              <div class="order-form__confirm-del">
+                <span>✖</span>
+              </div>
+            </div>
+            <div class="order-form__confirm-row">
+              <div class="order-form__confirm-name">
+                <span>Timeless love</span>
+              </div>
+              <div class="order-form__confirm-price">
+                <span>4 950 руб.</span>
+              </div>
+              <div class="order-form__confirm-del">
+                <span>✖</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-form__total">
+          <div class="order-form__discount">
+            <label class="order-form__label">Купон</label>
+            <input class="order-form__input" type="text" autocomplete="new-promocode">
+            <button class="button">Применить</button>
+          </div>
+          <div class="order-form__total-current">
+            <span>Итого : 9 375 руб.</span>
+          </div>
+        </div>
+      </div>
+      <div class="order-form__item">
+        <div class="order-form__top">
+          <h2>Платежная система</h2>
+        </div>
+        <div class="order-form__main">
+          <div class="order-form__paysystem">
+            <div class="order-form__paysystem-item">
+              <div class="order-form__paysystem-left">
+                <input type="radio" name="PAY_SYSTEM_ID" id="ID_PAY_SYSTEM_ID_3">
+                <label for="ID_PAY_SYSTEM_ID_3">
+                  <img class="lazyload" src="img/paysystems-1.png" alt="" width="44" height="21">
+                  IntellectMoney
+                  <small>
+                    (карты, электронные деньги, терминалы, &nbsp;
+                    <a href="" title="Узнать все способы" target="_blank">другие</a>
+                    )
+                  </small>
+                </label>
+              </div>
+              <div class="order-form__paysystem-right">
+                <img class="lazyload" src="img/paysystems-2.png" alt="" width="1092" height="66">
+              </div>
+            </div>
+            <div class="order-form__paysystem-item">
+              <div class="order-form__paysystem-left">
+                <input type="radio" name="PAY_SYSTEM_ID" id="ID_PAY_SYSTEM_ID_6">
+                <label for="ID_PAY_SYSTEM_ID_6">
+                  <img class="lazyload" src="img/paysystems-3.png" alt="" width="25" height="42">
+                  Payonline
+                  <small>
+                    (карты, электронные деньги)
+                  </small>
+                </label>
+              </div>
+              <div class="order-form__paysystem-right">
+                <img class="lazyload" src="img/paysystems-4.png" alt="" width="1092" height="66">
+              </div>
+            </div>
+            <div class="order-form__paysystem-item">
+              <button class="button">Перейти к оплате</button>
+            </div>
+            <div class="order-form__paysystem-item">
+              <p class="order-form__privacy-policy">
+                Нажимая на кнопку "Перейти к оплате" я соглашаюсь с
+                <a href="">Политикой обработки персональных данных</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          document.querySelectorAll(".order-form__phone input").forEach(function (item) {
+            window.intlTelInput(item, {
+              separateDialCode: true
+            });
+          });
+        });
+      </script>
+  </div>
+  </form>
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__column">
+        <p class="page-footer__title">Информация об услугах</p>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="tel:88003021486">8 (800) 302-14-86 — звонок по России бесплатный</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Официальный сайт АО «Россельхозбанк»</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Условия Программы лояльности «Урожай»</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__column">
+        <p class="page-footer__title">Мы в социальных сетях</p>
+        <ul class="page-footer__list page-footer__list_social">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link_social page-footer__link_social-facebook" href="#">Facebook</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link_social page-footer__link_social-twitter" href="#">Twitter</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link_social page-footer__link_social-vk" href="#">Вконтакте</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link_social page-footer__link_social-ok" href="#">Одноклассники</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link_social page-footer__link_social-instagram" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__column">
+        <p class="page-footer__title">Программа лояльности</p>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Помощь и поддержка</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">Условия Программы лояльности «Урожай»</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__inner page-footer__inner_bg-dark">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__column">
+        <p class="page-footer__info">119034, г. Москва, Гагаринский пер., д. 3.</p>
+      </div>
+      <div class="page-footer__column">
+        <p class="page-footer__info">© 2018 АО «Россельхозбанк»</p>
+      </div>
+      <div class="page-footer__column">
+        <p class="page-footer__info">E-mail: <a class="page-footer__link page-footer__link_color-gray" href="mailto:office@rshb.ru">office@rshb.ru</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="libs/mw/mw.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/mw.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
