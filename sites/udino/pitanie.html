@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Питание - ЛРКЦ &quot;Юдино&quot;</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favicon.png">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.3.1.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="patient-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <button class="header-top__nav-button hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-top__name">
+              <div class="header-top__logo"><img class="header-top__img" src="static/images/general/logo.png" alt=""></div>
+              <div class="header-top__title">
+                <h1 class="header-top__title-main"><span class="title-main_desktop">Лечебно-реабилитационный клинический центр "Юдино"</span><span class="title-main_mobile">ЛРКЦ "Юдино"</span></h1>
+                <p class="header-top__title-descr">Филиал ФГБУ «НМИЦ РК» Минздрава России</p>
+              </div>
+            </div>
+            <div class="header-top__info">
+              <div class="header-top__info-impared"><span class="icon-eye"></span>
+                <button class="header-top__info-impared_text" type="button" data-toggle="modal" data-target="#impared">Версия для слабовидящих</button>
+              </div>
+              <div class="header-top__info-contacts">
+                <div class="header-top__info-email"><span class="icon-mail"></span><a class="header-top__info-email_link" href="mailto:rkmrik@mail.ru">rkmrik@mail.ru</a></div>
+                <div class="header-top__info-phone"><span class="icon-phone"></span><a class="header-top__info-phone_link" href="tel:+74959261196">+7 (495) 926-11-96</a></div>
+              </div>
+            </div>
+            <button class="header-top__info-button" type="button" id="infoButtonModal"><span class="icon-info"></span></button>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">О центре</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./istoriya.html">История</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./rukovodstvo.html">Руководство центра</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oficialnaya-informaciya.html">Официальная информация</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./vakansii.html">Вакансии</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./nashi-partnery.html">Наши партнеры</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./strahovye-organizacii.html">Страховые организации ОМС</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./otzyvy.html">Отзывы</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Отделения</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./konsultativno-diagnosticheskoe.html">Консультативно-диагностическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./somaticheskoe.html">1-ое Соматическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oporno-dvigatelnyj-apparat-i-perifericheskaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями опорно-двигательного аппарата и периферической нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./centralnaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями центральной нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizicheskie-metody.html">Отделение физических методов реабилитации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizioterapiya.html">Отделение физиотерапии</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="expert.html">Специалисты</a></li>
+              <li class="main-nav__item with-submenu main-nav__item_active"><span class="main-nav__link">Пациентам</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pamyatka-pacienta.html">Памятка пациента</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./poryadok-gospitalizacii.html">Порядок госпитализации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./podgotovka-k-issledovaniyam.html">Подготовка к исследованиям</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./kruglosutochnyj-stacionar.html">Круглосуточный стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./dnevnoj-stacionar.html">Дневной стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./razmeshchenie.html">Размещение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pitanie.html">Питание</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mineralnaya-voda.html">Минеральная вода и рапа</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./shkola-zdorovya.html">Школа здоровья</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Платные услуги</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./prejskurant-uslug.html">Прейскурант услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./usloviya-okazaniya-platnyh-uslug.html">Условия оказания платных услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./bassejn.html">Бассейн</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./balneolechebnica.html">Бальнеолечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./gryazelechebnica.html">Грязелечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./robots.html">Роботы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mekhanoterapiya.html">Механотерапия</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="page-header">
+          <div class="container">
+            <h1>Питание</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item disable-item"><a href="index.html">Пациентам</a></li>
+                <li class="breadcrumb-item active"><a href="#">Питание</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <section class="page-body">
+          <div class="container">
+            <main class="section-body">
+              <div class="section-content">
+                <div class="content__img content__img_float-right" style="margin-bottom: 60px"><img src="/static/images/content/pitanie/img-1.jpg"></div>
+                <p class="content-text">Правильное питание – один из самых важных факторов восстановления организма и является неотъемлемой частью лечебно-восстановительного процесса. Баланс пищевого рациона позволяет пациентам набраться сил на выздоровление и наполнить организм полезными веществами в нужном количестве, что положительно сказывается на качестве реабилитационных мероприятий и здоровье в целом.</p>
+                <p class="content-text">В комплексном восстановительном плане лечения пациентов ЛРКЦ «Юдино» применяет четырехразовое диетическое питание.  При наличии показаний и имеющихся заболеваний питание пациента увеличивается до 6 раз в день.</p>
+                <p class="content-text">В рамках основных диет, врачом-диетологом используются современных сведений в диетологии.</p>
+                <p class="content-text">В ЛРКЦ «Юдино» удачно используется система стандартных диет, которые назначаются при различных заболеваниях с учетом особенностей течения и фазы заболевания, а также наличия сопутствующей патологии (Приказ МЗ РФ № 330 от 05.08.2003г.).</p>
+                <ul class="content__list">
+                  <li>Общая диета;</li>
+                  <li>Диета с механическим и химическим щажением;</li>
+                  <li>Высокобелковая диета;</li>
+                  <li>Низкокалорийная диета.</li>
+                </ul>
+              </div>
+            </main>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-slider">
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://www.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Министерство<br>здравоохранения<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://www.takzdorovo.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-2.webp"></div>
+                <div class="slider-item__text">Здоровая Россия</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://nok.rosminzdrav.ru/site.html#!/86/9865" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Независимая оценка качества оказания услуг медицинскими организациями</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://fss.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-3.webp"></div>
+                <div class="slider-item__text">Фонд социального<br>страхования<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://kurort.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Государственный реестр курортного фонда Российской Федерации</div></a></div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-info__name">
+              <div class="info__name-logo"><img src="static/images/content/footer/logo_footer.jpg"></div>
+              <div class="info__name-title">Лечебно-реабилитационный<br>клинический центр &laquo;ЮДИНО&raquo;&nbsp;&mdash;<br>филиал ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</div>
+            </div>
+            <div class="footer-info__copyright"><span>&copy;&nbsp;2019&nbsp;ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

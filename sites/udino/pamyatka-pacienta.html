@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Памятка пациента - ЛРКЦ &quot;Юдино&quot;</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favicon.png">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.3.1.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="patient-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <button class="header-top__nav-button hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-top__name">
+              <div class="header-top__logo"><img class="header-top__img" src="static/images/general/logo.png" alt=""></div>
+              <div class="header-top__title">
+                <h1 class="header-top__title-main"><span class="title-main_desktop">Лечебно-реабилитационный клинический центр "Юдино"</span><span class="title-main_mobile">ЛРКЦ "Юдино"</span></h1>
+                <p class="header-top__title-descr">Филиал ФГБУ «НМИЦ РК» Минздрава России</p>
+              </div>
+            </div>
+            <div class="header-top__info">
+              <div class="header-top__info-impared"><span class="icon-eye"></span>
+                <button class="header-top__info-impared_text" type="button" data-toggle="modal" data-target="#impared">Версия для слабовидящих</button>
+              </div>
+              <div class="header-top__info-contacts">
+                <div class="header-top__info-email"><span class="icon-mail"></span><a class="header-top__info-email_link" href="mailto:rkmrik@mail.ru">rkmrik@mail.ru</a></div>
+                <div class="header-top__info-phone"><span class="icon-phone"></span><a class="header-top__info-phone_link" href="tel:+74959261196">+7 (495) 926-11-96</a></div>
+              </div>
+            </div>
+            <button class="header-top__info-button" type="button" id="infoButtonModal"><span class="icon-info"></span></button>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">О центре</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./istoriya.html">История</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./rukovodstvo.html">Руководство центра</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oficialnaya-informaciya.html">Официальная информация</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./vakansii.html">Вакансии</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./nashi-partnery.html">Наши партнеры</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./strahovye-organizacii.html">Страховые организации ОМС</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./otzyvy.html">Отзывы</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Отделения</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./konsultativno-diagnosticheskoe.html">Консультативно-диагностическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./somaticheskoe.html">1-ое Соматическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oporno-dvigatelnyj-apparat-i-perifericheskaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями опорно-двигательного аппарата и периферической нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./centralnaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями центральной нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizicheskie-metody.html">Отделение физических методов реабилитации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizioterapiya.html">Отделение физиотерапии</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="expert.html">Специалисты</a></li>
+              <li class="main-nav__item with-submenu main-nav__item_active"><span class="main-nav__link">Пациентам</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pamyatka-pacienta.html">Памятка пациента</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./poryadok-gospitalizacii.html">Порядок госпитализации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./podgotovka-k-issledovaniyam.html">Подготовка к исследованиям</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./kruglosutochnyj-stacionar.html">Круглосуточный стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./dnevnoj-stacionar.html">Дневной стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./razmeshchenie.html">Размещение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pitanie.html">Питание</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mineralnaya-voda.html">Минеральная вода и рапа</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./shkola-zdorovya.html">Школа здоровья</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Платные услуги</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./prejskurant-uslug.html">Прейскурант услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./usloviya-okazaniya-platnyh-uslug.html">Условия оказания платных услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./bassejn.html">Бассейн</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./balneolechebnica.html">Бальнеолечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./gryazelechebnica.html">Грязелечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./robots.html">Роботы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mekhanoterapiya.html">Механотерапия</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="page-header">
+          <div class="container">
+            <h1>Памятка пациента</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item disable-item"><a href="index.html">Пациентам</a></li>
+                <li class="breadcrumb-item active"><a href="#">Памятка пациента</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <section class="page-body">
+          <div class="container">
+            <aside class="section-menu">
+              <ul class="list">
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_1')" id="defaultOpen">Правила поведения пациентов</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_2')">График посещения и правила поведения посетителей</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_3')">Распорядок дня</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_4')" id="smokingBan">О запрете курения</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_5')">Что взять с собой?</button>
+                </li>
+              </ul>
+            </aside>
+            <main class="section-body enabled-menu">
+              <div class="section-content" id="tab_1">
+                <h2 class="content-title">Правила поведения пациентов</h2>
+                <p class="content-text content-text__justify">Настоящие Правила разработаны в соответствии с Федеральными законами РФ «Об основах охраны здоровья граждан в Российской Федерации», «О защите прав потребителей», Гражданским кодексом Российской Федерации и иными нормативными актами.</p>
+                <p class="content-text content-text__justify">Правила определяют нормы поведения пациентов и иных посетителей  в ЛРКЦ «Юдино» при получении медицинских услуг с целью обеспечения условий для более полного удовлетворения потребности в медицинской помощи, услугах медицинского сервиса и услугах, косвенно связанных с медицинскими, обеспечения безопасности граждан при посещении ими ЛРКЦ «Юдино», а также работников ЛРКЦ «Юдино»</p>
+                <p class="content-text">Соблюдение настоящих Правил является обязательным.</p><a class="btn btn-small" href="static/data/pamyatka-pacienta/pravila-povedeniya-pacientov.pdf" target="blank">Смотреть</a>
+              </div>
+              <div class="section-content" id="tab_2">
+                <h2 class="content-title">График посещения и правила поведения посетителей</h2>
+                <p class="content-text">В лечебно-реабилитационном клиническом центре «Юдино» пациент вправе принимать посетителей в установленные часы:</p>
+                <ul class="content__list">
+                  <li><b>Понедельник - пятница</b>, 9:00 - 16:30</li>
+                  <li><b>Суббота - воскресенье</b>, 9:00 - 21:00</li>
+                </ul>
+                <p class="content-text content-text__justify">В соответствии с <button type="button" class="btn-link" onclick='showTab("defaultOpen")'>Правилами поведения</button> пациентам и посетителям ЛРКЦ «Юдино», в целях соблюдения общественного правопорядка, предупреждения и пресечения террористической деятельности, иных преступлений и административных правонарушений, соблюдения санитарно-эпидемиологических правил, обеспечения личной безопасности работников ЛРКЦ «Юдино», а также пациентов и посетителей в зданиях и служебных помещениях <b>ЗАПРЕЩАЕТСЯ</b>:</p>
+                <ul class="content__list">
+                  <li>Проносить в здание и служебные помещения ЛРКЦ &laquo;Юдино&raquo; огнестрельное, газовое и холодное оружие, ядовитые, радиоактивные, химические и взрывчатые вещества, спиртные напитки и иные предметы и средства, наличие которых у посетителей либо их применение (использование) может представлять угрозу для безопасности окружающих;</li>
+                  <li><button type="button" class="btn-link" onclick='showTab("smokingBan")'>Курить в помещениях и на территории ЛРКЦ "Юдино"</button>;</li>
+                  <li>Играть в азартные игры и на территории ЛРКЦ «Юдино»;</li>
+                  <li>Громко разговаривать, шуметь, хлопать дверями;</li>
+                  <li>Выносить из помещений ЛРКЦ «Юдино» документы, полученные для ознакомления;</li>
+                  <li>Изымать документы из медицинских карт, со стендов и папок информационных стендов;</li>
+                  <li>Находиться в служебных помещениях ЛРКЦ «Юдино» без разрешения сотрудников;</li>
+                  <li>Выносить из столовой посуду и столовые предметы;</li>
+                  <li>Держать в палате большие суммы денег, ценные вещи, украшения, скоропортящиеся продукты;</li>
+                  <li>Размещать в помещениях и на территории ЛРКЦ «Юдино» объявления без разрешения Администрации ЛРКЦ «Юдино»;</li>
+                  <li>Производить фото- и видеосъемку без разрешения Администрации ЛРКЦ «Юдино»;</li>
+                  <li>Выполнять в помещениях ЛРКЦ «Юдино» функции торговых агентов, представителей и иных коммерческих целях;</li>
+                  <li>Выбрасывать мусор и пищевые отходы из окон и на территории ЛРКЦ «Юдино», портить зеленые насаждения на территории;</li>
+                  <li>Находиться в помещении ЛРКЦ «Юдино» в верхней одежде и грязной обуви;</li>
+                  <li>Запрещается доступ в задание и помещения ЛРКЦ «Юдино» лицам в состоянии алкогольного или наркотического опьянения, с агрессивным поведением, имеющим внешний вид, не отвечающим санитарно-гигиеническим требованиям.</li>
+                  <p class="content-text">В случае выявления указанных нарушений, посетители удаляются из здания и помещений ЛРКЦ «Юдино» сотрудниками охраны и (или) правоохранительными органами.</p>
+                </ul>
+              </div>
+              <div class="section-content" id="tab_3">
+                <h2 class="content-title">Распорядок дня</h2>
+                <table class="table table_clear-header">
+                  <tbody>
+                    <tr>
+                      <td>7:00</td>
+                      <td>Подъем</td>
+                    </tr>
+                    <tr>
+                      <td>7:00&nbsp;-&nbsp;7:30</td>
+                      <td>Утренний туалет</td>
+                    </tr>
+                    <tr>
+                      <td>8:00&nbsp;-&nbsp;8:30</td>
+                      <td>Измерение температуры, артериального давления и сдача анализов</td>
+                    </tr>
+                    <tr>
+                      <td>9:00&nbsp;-&nbsp;9:30</td>
+                      <td>Завтрак</td>
+                    </tr>
+                    <tr>
+                      <td>9:30&nbsp;-&nbsp;12:00</td>
+                      <td>Осмотр врача</td>
+                    </tr>
+                    <tr>
+                      <td>9:30&nbsp;-&nbsp;16:00</td>
+                      <td>Лечебные процедуры</td>
+                    </tr>
+                    <tr>
+                      <td>13:30&nbsp;-&nbsp;14:30</td>
+                      <td>Обед</td>
+                    </tr>
+                    <tr>
+                      <td>14:30&nbsp;-&nbsp;16:00</td>
+                      <td>Тихий час</td>
+                    </tr>
+                    <tr>
+                      <td>16:00&nbsp;-&nbsp;16:45</td>
+                      <td>Полдник (кефир, сок)</td>
+                    </tr>
+                    <tr>
+                      <td>17:30&nbsp;-&nbsp;18:15</td>
+                      <td>Ужин</td>
+                    </tr>
+                    <tr>
+                      <td>19:10&nbsp;-&nbsp;20:00</td>
+                      <td>Прием лекартств (пост мед. сестры). Измерение температуры, артериального давления и выполнение назначений</td>
+                    </tr>
+                    <tr>
+                      <td>20:00&nbsp;-&nbsp;21:30</td>
+                      <td>Обход дежурного врача (медицинской сестры) отделений</td>
+                    </tr>
+                    <tr>
+                      <td>21:30&nbsp;-&nbsp;23:00</td>
+                      <td>Вечерний туалет</td>
+                    </tr>
+                    <tr>
+                      <td>23:00</td>
+                      <td>Сон (выключение света, адио, ТВ, запрещается хождение по коридорам)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="section-content" id="tab_4">
+                <h2 class="content-title">О запрете курения</h2>
+                <p class="content-text">Настоящее положение разработано в&nbsp;соответствии с&nbsp;требованиями Федерального закона &#8470;&nbsp;15&nbsp;от&nbsp;23.02.2013&nbsp;г. &laquo;Об&nbsp;охране здоровья граждан от&nbsp;воздействия окружающего табачного дыма и&nbsp;последствий потребления табака&raquo;.</p>
+                <p class="content-text">Для предотвращения вредного воздействия окружающего табачного дыма на здоровье человека запрещается курение на территориях и в помещениях структурных подразделений учреждения.</p>
+                <p class="content-text">Нарушение законодательства о запрете курения влечет за собой привлечение к административной ответственности в соответствии с КоАП РФ.</p>
+                <p class="content-text">В случае нарушения положения к сотрудникам, посетителям или пациентам принимаются предупредительные меры в форме беседы о вреде курения, замечания, доклада руководству учреждения.</p>
+                <p class="content-text">Систематическое несоблюдение требований положения влечет за собой:</p>
+                <ul class="content__list">
+                  <li>для пациентов - выписку за нарушение больничного режима;</li>
+                  <li>для работников ЛРКЦ "Юдино" наказание соответствующее правилам внутреннего трудового распорядка;</li>
+                  <li>оформление документов для привлечения к административному наказанию (штрафу) в соответствии с законодательством (КоАП РФ).</li>
+                </ul><a class="btn btn-small" href="static/data/pamyatka-pacienta/o-zaprete-kureniya.pdf" target="blank">Смотреть</a>
+              </div>
+              <div class="section-content" id="tab_5">
+                <h2 class="content-title">Что взять с собой?</h2>
+                <p class="content-text">Что брать с собой в реабилитационный центр?</p>
+                <p class="content-text">Очень хочется помочь Вам со сборами, поэтому решили составить список рекомендуемых вещей:</p>
+                <ol class="content__list content__list_numbered">
+                  <li>Документы
+                    <ul class="content__list">
+                      <li>Паспорт;</li>
+                      <li>Полис обязательного медицинского страхования;</li>
+                      <li>СНИЛС;</li>
+                    </ul>
+                  </li>
+                  <li>Предметы личной гигиены
+                    <ul class="content__list">
+                      <li>Полотенце банное – 1 шт.;</li>
+                      <li>Полотенце личное – 1 шт.;</li>
+                      <li>Зубная щетка;</li>
+                      <li>Зубная паста;</li>
+                      <li>Мыло;</li>
+                      <li>Шампунь;</li>
+                      <li>Дезодорант;</li>
+                      <li>Туалетная бумага;</li>
+                      <li>Салфетки (влажные и сухие);</li>
+                      <li>Бритвенные принадлежности;</li>
+                      <li>Предметы для ухода за ногтями;</li>
+                      <li>Расческа;</li>
+                      <li>Фен;</li>
+                      <li>Чашка;</li>
+                      <li>Ложка;</li>
+                      <li>Тарелка;</li>
+                    </ul>
+                  </li>
+                  <li>Предметы одежды
+                    <ul class="content__list">
+                      <li>Удобная обувь для перемещения по центру без шнурков;</li>
+                      <li>Домашние тапочки;</li>
+                      <li>Верхняя одежда (по сезону);</li>
+                      <li>Свободную одежду для нахождения в центре;</li>
+                      <li>Нижнее белье;</li>
+                      <li>Носки;</li>
+                      <li>Спортивная форма (костюм) для занятий спортом;</li>
+                      <li>Плавательный костюм (купальник/плавки);</li>
+                      <li>Резиновые шлепки с рифленой подошвой для посещения бассейна и бальнеологии;</li>
+                      <li>Шапочка для плавания;</li>
+                      <li>Халат.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </main>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-slider">
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://www.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Министерство<br>здравоохранения<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://www.takzdorovo.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-2.webp"></div>
+                <div class="slider-item__text">Здоровая Россия</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://nok.rosminzdrav.ru/site.html#!/86/9865" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Независимая оценка качества оказания услуг медицинскими организациями</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://fss.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-3.webp"></div>
+                <div class="slider-item__text">Фонд социального<br>страхования<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://kurort.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Государственный реестр курортного фонда Российской Федерации</div></a></div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-info__name">
+              <div class="info__name-logo"><img src="static/images/content/footer/logo_footer.jpg"></div>
+              <div class="info__name-title">Лечебно-реабилитационный<br>клинический центр &laquo;ЮДИНО&raquo;&nbsp;&mdash;<br>филиал ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</div>
+            </div>
+            <div class="footer-info__copyright"><span>&copy;&nbsp;2019&nbsp;ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script>document.getElementById("defaultOpen").click();</script>
+    <script>
+      function showTab(arg) {
+          if (arg === 'defaultOpen') {
+              document.getElementById(arg).click();
+          } else if (arg === 'smokingBan') {
+              document.getElementById(arg).click();
+          }
+      }
+    </script>
+  </body>
+</html>

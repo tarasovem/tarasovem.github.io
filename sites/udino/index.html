@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница - ЛРКЦ &quot;Юдино&quot;</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favicon.png">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.3.1.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="main-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <button class="header-top__nav-button hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-top__name">
+              <div class="header-top__logo"><img class="header-top__img" src="static/images/general/logo.png" alt=""></div>
+              <div class="header-top__title">
+                <h1 class="header-top__title-main"><span class="title-main_desktop">Лечебно-реабилитационный клинический центр "Юдино"</span><span class="title-main_mobile">ЛРКЦ "Юдино"</span></h1>
+                <p class="header-top__title-descr">Филиал ФГБУ «НМИЦ РК» Минздрава России</p>
+              </div>
+            </div>
+            <div class="header-top__info">
+              <div class="header-top__info-impared"><span class="icon-eye"></span>
+                <button class="header-top__info-impared_text" type="button" data-toggle="modal" data-target="#impared">Версия для слабовидящих</button>
+              </div>
+              <div class="header-top__info-contacts">
+                <div class="header-top__info-email"><span class="icon-mail"></span><a class="header-top__info-email_link" href="mailto:rkmrik@mail.ru">rkmrik@mail.ru</a></div>
+                <div class="header-top__info-phone"><span class="icon-phone"></span><a class="header-top__info-phone_link" href="tel:+74959261196">+7 (495) 926-11-96</a></div>
+              </div>
+            </div>
+            <button class="header-top__info-button" type="button" id="infoButtonModal"><span class="icon-info"></span></button>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item_active"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">О центре</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./istoriya.html">История</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./rukovodstvo.html">Руководство центра</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oficialnaya-informaciya.html">Официальная информация</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./vakansii.html">Вакансии</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./nashi-partnery.html">Наши партнеры</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./strahovye-organizacii.html">Страховые организации ОМС</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./otzyvy.html">Отзывы</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Отделения</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./konsultativno-diagnosticheskoe.html">Консультативно-диагностическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./somaticheskoe.html">1-ое Соматическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oporno-dvigatelnyj-apparat-i-perifericheskaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями опорно-двигательного аппарата и периферической нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./centralnaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями центральной нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizicheskie-metody.html">Отделение физических методов реабилитации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizioterapiya.html">Отделение физиотерапии</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="expert.html">Специалисты</a></li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Пациентам</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pamyatka-pacienta.html">Памятка пациента</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./poryadok-gospitalizacii.html">Порядок госпитализации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./podgotovka-k-issledovaniyam.html">Подготовка к исследованиям</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./kruglosutochnyj-stacionar.html">Круглосуточный стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./dnevnoj-stacionar.html">Дневной стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./razmeshchenie.html">Размещение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pitanie.html">Питание</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mineralnaya-voda.html">Минеральная вода и рапа</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./shkola-zdorovya.html">Школа здоровья</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Платные услуги</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./prejskurant-uslug.html">Прейскурант услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./usloviya-okazaniya-platnyh-uslug.html">Условия оказания платных услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./bassejn.html">Бассейн</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./balneolechebnica.html">Бальнеолечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./gryazelechebnica.html">Грязелечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./robots.html">Роботы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mekhanoterapiya.html">Механотерапия</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="container">
+          <section class="main-slider">
+            <div class="main-slider__item main-slider__item_first">
+              <h2 class="main-slider__title">Качественные услуги бесплатно&nbsp;&mdash; это не&nbsp;миф</h2>
+              <p class="main-slider__descr">С&nbsp;заботой о&nbsp;вашем здоровье мы&nbsp;предоставляем бесплатные услуги в&nbsp;рамках полиса ОМС.</p><a class="btn main-slider__btn" href="/contacts.html?show=info">Записаться на прием</a>
+            </div>
+            <div class="main-slider__item main-slider__item_second">
+              <h2 class="main-slider__title">Минеральная вода и рапа</h2>
+              <p class="main-slider__descr">Уникальные природные ресурсы для вашего здоровья из недр земли.</p><a class="btn main-slider__btn" href="mineralnaya-voda.html">Подробнее</a>
+            </div>
+          </section>
+        </div>
+        <section class="main-department__wrapper">
+          <div class="container">
+            <section class="main-department">
+              <div class="main-department__item">
+                <h2 class="main-department__title main-department__title_heart">Кардиология</h2>
+                <article class="main-department__text">Соматическое отделение поможет с реабилитацией и восстановлением пациентам с паталогиями сердечно-сосудистой системы.</article><a class="main-department__more" href="./somaticheskoe.html">Подробнее...</a>
+              </div>
+              <div class="main-department__item">
+                <h2 class="main-department__title main-department__title_bone">Опорно-двигательный аппарат</h2>
+                <article class="main-department__text">Восстановление подвижности суставов, последвия переломов и протезирования костей, а также сопутствующие проблемы периферической нервной системы.</article><a class="main-department__more" href="./oporno-dvigatelnyj-apparat-i-perifericheskaya-nervnaya-sistema.html">Подробнее...</a>
+              </div>
+              <div class="main-department__item">
+                <h2 class="main-department__title main-department__title_brain">Центральная нервная система</h2>
+                <article class="main-department__text">Помощь пациентам неврологического профиля с заболеваниями централной нервной системы.</article><a class="main-department__more" href="./centralnaya-nervnaya-sistema.html">Подробнее...</a>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="advantages__wrapper">
+          <div class="container">
+            <h3 class="advantages__title">Что делает нас уникальными</h3>
+            <div class="advantages__content">
+              <div class="advantages__content__item">
+                <div class="advantages__content__img_wrapper">
+                  <picture>
+                    <source srcset="static/images/content/main/advantages/doctor.webp" type="image/webp">
+                    <source srcset="static/images/content/main/advantages/doctor.png" type="image/png">
+                  </picture><img src="static/images/content/main/advantages/doctor.png" alt="Доктор">
+                </div>
+                <h4 class="advantages__content__title">Уникальный персонал</h4>
+                <p class="advantages__content__descr">В&nbsp;штате клиники состоят специалисты с&nbsp;многолетней практикой</p>
+              </div>
+              <div class="advantages__content__item">
+                <div class="advantages__content__img_wrapper">
+                  <picture>
+                    <source srcset="static/images/content/main/advantages/water.webp" type="image/webp">
+                    <source srcset="static/images/content/main/advantages/water.png" type="image/png">
+                  </picture><img src="static/images/content/main/advantages/water.png" alt="Вода">
+                </div>
+                <h4 class="advantages__content__title">Природная вода</h4>
+                <p class="advantages__content__descr">На&nbsp;территории клиники есть собственный источник минеральной воды</p>
+              </div>
+              <div class="advantages__content__item">
+                <div class="advantages__content__img_wrapper">
+                  <picture>
+                    <source srcset="static/images/content/main/advantages/equipment.webp" type="image/webp">
+                    <source srcset="static/images/content/main/advantages/equipment.png" type="image/png">
+                  </picture><img src="static/images/content/main/advantages/equipment.png" alt="Оборудование">
+                </div>
+                <h4 class="advantages__content__title">Современная техника</h4>
+                <p class="advantages__content__descr">Клиника прошла технологическое перевооружение</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services__wrapper">
+          <div class="container">
+            <h3 class="services__title">Наши услуги</h3>
+            <div class="services__descr_wrapper">
+              <p class="services__descr">Мы&nbsp;предоставляем качественное медицинское<br>обслуживание для всех категорий пациентов</p>
+            </div>
+            <div class="services__list">
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-1.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-1.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-1.jpg" alt="Физиотерапия">
+                  </picture><a href="fizioterapiya.html"><i class="icon-right-big"></i> Физиотерапия</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-2.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-2.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-2.jpg" alt="Механотерапия">
+                  </picture><a href="mekhanoterapiya.html"><i class="icon-right-big"></i> Механотерапия</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-3.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-3.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-3.jpg" alt="Лечебная физкультура">
+                  </picture><a href="lechebnaya-fizkultura.html"><i class="icon-right-big"></i> Лечебная физкультура</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-4.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-4.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-4.jpg" alt="Роботы">
+                  </picture><a href="robots.html"><i class="icon-right-big"></i> Роботы</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-5.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-5.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-5.jpg" alt="Бассейн">
+                  </picture><a href="bassejn.html"><i class="icon-right-big"></i> Бассейн</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-6.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-6.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-6.jpg" alt="Грязелечение">
+                  </picture><a href="gryazelechebnica.html"><i class="icon-right-big"></i> Грязелечение</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-7.webp 320w" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-7.jpg 320w" type="image/jpeg"><img src="static/images/content/main/services/img-7.jpg" alt="Бальнеолечение">
+                  </picture><a href="balneolechebnica.html"><i class="icon-right-big"></i> Бальнеолечение</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-8.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-8.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-8.jpg" alt="Социально-бытовая реабилитация">
+                  </picture><a href="socialno-bytovaya-reabilitaciya.html"><i class="icon-right-big"></i> Социально-бытовая реабилитация</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item__body">
+                  <picture>
+                    <source srcset="static/images/content/main/services/img-9.webp" type="image/webp">
+                    <source srcset="static/images/content/main/services/img-9.jpg" type="image/jpeg"><img src="static/images/content/main/services/img-9.jpg" alt="Массаж">
+                  </picture><a href="#"><i class="icon-right-big"></i> Массаж</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="content__video content__video_youtube"><iframe style="width: 100%; min-height: 400px;" src="https://www.youtube.com/embed/oHwDPH27B9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <section class="team">
+          <figure class="team__item">
+            <div class="team__link"><img src="/static/images/content/rukovodstvo/img-1.jpg" alt="Фото главного врача"></div>
+            <div class="team__descr">
+              <h5 class="team__descr__title">Терешин Геннадий Иванович</h5>
+              <p class="team__descr__subtitle">Главный врач</p>
+            </div>
+            <figcaption><a class="team__item__button" href="/rukovodstvo.html#team1">Посмотреть полный профиль</a></figcaption>
+          </figure>
+          <figure class="team__item">
+            <div class="team__link"><img src="/static/images/content/rukovodstvo/img-2.jpg" alt="Фото заместителя главного врача"></div>
+            <div class="team__descr">
+              <h5 class="team__descr__title">Сергунин Олег Николаевич</h5>
+              <p class="team__descr__subtitle">Заместитель главного врача<br>по медицинской части</p>
+            </div>
+            <figcaption><a class="team__item__button" href="/rukovodstvo.html#team2">Посмотреть полный профиль</a></figcaption>
+          </figure>
+          <figure class="team__item">
+            <div class="team__link"><img src="/static/images/content/expert/expert-14.jpg" alt="Фото заведующего отделением"></div>
+            <div class="team__descr">
+              <h5 class="team__descr__title">Рашидова Эльмира Шавкатовна</h5>
+              <p class="team__descr__subtitle">Заведующий отделением&nbsp;&mdash;<br>врач-невролог</p>
+            </div>
+            <figcaption><a class="team__item__button">Посмотреть полный профиль</a></figcaption>
+          </figure>
+          <figure class="team__item">
+            <div class="team__link"><img src="/static/images/content/expert/expert-1.jpg" alt="Фото заведующего отделением"></div>
+            <div class="team__descr">
+              <h5 class="team__descr__title">Роган Сергей Владимирович</h5>
+              <p class="team__descr__subtitle">Заведующий отделением&nbsp;&mdash;<br>врач-кардиолог</p>
+            </div>
+            <figcaption><a class="team__item__button">Посмотреть полный профиль</a></figcaption>
+          </figure>
+          <figure class="team__item">
+            <div class="team__link"><img src="/static/images/content/expert/expert-4.jpg" alt="Фото заведующего отделением"></div>
+            <div class="team__descr">
+              <h5 class="team__descr__title">Хонинов Бадма Валериевич</h5>
+              <p class="team__descr__subtitle">Заведующий отделением&nbsp;&mdash;<br>врач-травматолог-ортопед</p>
+            </div>
+            <figcaption><a class="team__item__button">Посмотреть полный профиль</a></figcaption>
+          </figure>
+        </section>
+        <section class="placement">
+          <div class="container">
+            <h3 class="placement__title">Где лечим</h3>
+            <div class="placement__list">
+              <div class="placement__item">
+                <div class="placement__img"><img src="static/images/content/main/placement/img-1.webp" alt=""></div>
+                <h5 class="placement__item__title">Вдалеке от города</h5>
+                <p class="placement__item__text">Наш центр расположен вдали от&nbsp;оживленных трасс и&nbsp;дорог. Вашему покою не&nbsp;будет ничего мешать. Вы&nbsp;сможете спокойно проходить курсы реабилитации.</p>
+              </div>
+              <div class="placement__item">
+                <div class="placement__img"><img src="static/images/content/main/placement/img-2.webp" alt=""></div>
+                <h5 class="placement__item__title">В окружении зелени</h5>
+                <p class="placement__item__text">Зелень для человека подчас лучшее лекарство. В&nbsp;нашем центре много растений, а&nbsp;значит радовать вас будет не&nbsp;только красивый интерьер, но&nbsp;и&nbsp;чистый воздух.</p>
+              </div>
+              <div class="placement__item">
+                <div class="placement__img"><img src="static/images/content/main/placement/img-3.webp" alt=""></div>
+                <h5 class="placement__item__title">На свежем воздухе</h5>
+                <p class="placement__item__text">А&nbsp;если помимо чистого воздуха вам захочется ещё насладиться и&nbsp;красивыми пейздажами, то&nbsp;в&nbsp;вашем располяжении пейзажи прилегающей территории.</p>
+              </div>
+              <div class="content__video content__video_html">
+                <video src="static/video/placement/placement-video.mp4" controls></video>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="opinion">
+          <div class="container">
+            <h3 class="opinion__title">Отзывы</h3>
+            <section class="opinion-slider">
+              <div class="opinion-slider__item">
+                <blockquote class="opinion__quote">
+                  <div class="opinion__quote-body">
+                    <p class="opinion__quote-content">
+                      Мунько Галина, лечилась в неврологическом отделении 4&nbsp;этаж. Выражаю большую благодарность
+                      за лечение, внимание, чуткое отношение, всему медицинскому персоналу, официанткам,
+                      методистам бассейна, врачу Кадегроб Ирине Геннадьевне, медицинской сестре Кучер Вере
+                      Николаевне, санитарке Люде.
+                    </p>
+                    <div class="opinion__quote-meta">
+                      <div>Мунько Г.</div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="opinion-slider__item">
+                <blockquote class="opinion__quote">
+                  <div class="opinion__quote-body">
+                    <p class="opinion__quote-content">
+                       Огромное спасибо коллективу&nbsp;ОД и&nbsp;ПНС (на&nbsp;седьмом этаже)
+                      за&nbsp;доброжелательное, профессиональное отношение к&nbsp;пациентам. Приезжаешь
+                      на&nbsp;лечение как в&nbsp;родной дом. Также спасибо работника водолечебницы
+                      и&nbsp;физиотерапии.<br><...>
+                    </p>
+                    <div class="opinion__quote-meta">
+                      <div>Андреева О.Е.</div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="opinion-slider__item">
+                <blockquote class="opinion__quote">
+                  <div class="opinion__quote-body">
+                    <p class="opinion__quote-content">
+                      Хочу выразить свое большое спасибо за&nbsp;радужный прием, очень хорошее и&nbsp;теплое
+                      отношение всего коллектива! Изумительный бассейн, тренер, кабинет &laquo;грязи
+                      ванны&raquo;. Отдельное спасибо Изотовой Екатерине Александровне!
+                    </p>
+                    <div class="opinion__quote-meta">
+                      <div>Квасова Т.П.</div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="opinion-slider__item">
+                <blockquote class="opinion__quote">
+                  <div class="opinion__quote-body">
+                    <p class="opinion__quote-content">
+                      Хотим выразить благодарность коллективу грязелечебницы в&nbsp;лице Кунавиной Валентины
+                      Ивановны, Поздняковой Ульяны Викторовны, Терешкиной Жанны Викторовны. Спасибо
+                      за&nbsp;доброжелательное отношение и&nbsp;профессионализм, чуткое и&nbsp;внимательное
+                      расположение к&nbsp;пациентам.<br>Так же отдельное спасибо коллективу ванны!
+                    </p>
+                    <div class="opinion__quote-meta">
+                      <div>Батяй Е.П., Хависов Ш.Г.</div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="map">
+          <div class="map__wrapper">
+            <article class="container">
+              <div class="map__info">
+                <div class="map__item">
+                  <h6 class="map__title">Телефон:</h6><a class="map__phone" href="tel:84959261196">+7 (495) 926-11-96</a>
+                </div>
+                <div class="map__item">
+                  <h6 class="map__title">E-mail:</h6><a class="map__link" href="mailto:rkmrik@mail.ru">rkmrik@mail.ru</a><a class="map__link" href="mailto:rk@rncmrik.ru">rk@rncmrik.ru</a>
+                </div>
+                <div class="map__item">
+                  <h6 class="map__title">Адрес:</h6>
+                  <p class="map__address">143081, Московская обл, Одинцовский р-н, с.Юдино, ул.Красная, д.23</p>
+                </div>
+                <div class="map__item"><a class="map__title-link" href="/contacts.html?show=address">График работы</a></div>
+                <div class="map__item">
+                  <div class="socials">
+                    <div class="socials__item"><a href="#"><img src="static/images/content/main/social/facebook-logo.webp" /></a></div>
+                    <div class="socials__item"><a href="#"><img src="static/images/content/main/social/instagram-social.webp" /></a></div>
+                    <div class="socials__item"><a href="#"><img src="static/images/content/main/social/vk-social-logotype.webp" /></a></div>
+                    <div class="socials__item"><a href="#"><img src="static/images/content/main/social/odnoklassniki-logo.webp" /></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3508b561b4f2cce3e608677452acb00cdf17984597c41270aad9cbe8c20c33c&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+        </section>
+        <div class="modal fade" id="application" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Записаться на прием</h3>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">Оставьте свой номер телефона и наши специалисты свяжутся с Вами.
+                <div class="form-group">
+                  <label class="form-label form-label-outside rd-input-label" for="contact-name">Как вас зовут? (Ф.И.О)</label>
+                  <input class="form-control" id="contact-name" type="text" name="name">
+                  <label class="form-label form-label-outside rd-input-label" for="contact-tel">Номер телефона</label>
+                  <input class="form-control" id="contact-tel" type="tel" name="tel">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="button">Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="impared" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Версия для слабовидящих</h3>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">Функционал находится в разработке. Приносим свои извинения за временные неудобства.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-slider">
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://www.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Министерство<br>здравоохранения<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://www.takzdorovo.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-2.webp"></div>
+                <div class="slider-item__text">Здоровая Россия</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://nok.rosminzdrav.ru/site.html#!/86/9865" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Независимая оценка качества оказания услуг медицинскими организациями</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://fss.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-3.webp"></div>
+                <div class="slider-item__text">Фонд социального<br>страхования<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://kurort.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Государственный реестр курортного фонда Российской Федерации</div></a></div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-info__name">
+              <div class="info__name-logo"><img src="static/images/content/footer/logo_footer.jpg"></div>
+              <div class="info__name-title">Лечебно-реабилитационный<br>клинический центр &laquo;ЮДИНО&raquo;&nbsp;&mdash;<br>филиал ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</div>
+            </div>
+            <div class="footer-info__copyright"><span>&copy;&nbsp;2019&nbsp;ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

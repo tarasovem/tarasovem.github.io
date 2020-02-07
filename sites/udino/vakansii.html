@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Вакансии - ЛРКЦ &quot;Юдино&quot;</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favicon.png">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.3.1.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="page-aside">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <button class="header-top__nav-button hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-top__name">
+              <div class="header-top__logo"><img class="header-top__img" src="static/images/general/logo.png" alt=""></div>
+              <div class="header-top__title">
+                <h1 class="header-top__title-main"><span class="title-main_desktop">Лечебно-реабилитационный клинический центр "Юдино"</span><span class="title-main_mobile">ЛРКЦ "Юдино"</span></h1>
+                <p class="header-top__title-descr">Филиал ФГБУ «НМИЦ РК» Минздрава России</p>
+              </div>
+            </div>
+            <div class="header-top__info">
+              <div class="header-top__info-impared"><span class="icon-eye"></span>
+                <button class="header-top__info-impared_text" type="button" data-toggle="modal" data-target="#impared">Версия для слабовидящих</button>
+              </div>
+              <div class="header-top__info-contacts">
+                <div class="header-top__info-email"><span class="icon-mail"></span><a class="header-top__info-email_link" href="mailto:rkmrik@mail.ru">rkmrik@mail.ru</a></div>
+                <div class="header-top__info-phone"><span class="icon-phone"></span><a class="header-top__info-phone_link" href="tel:+74959261196">+7 (495) 926-11-96</a></div>
+              </div>
+            </div>
+            <button class="header-top__info-button" type="button" id="infoButtonModal"><span class="icon-info"></span></button>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item with-submenu main-nav__item_active"><span class="main-nav__link">О центре</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./istoriya.html">История</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./rukovodstvo.html">Руководство центра</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oficialnaya-informaciya.html">Официальная информация</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./vakansii.html">Вакансии</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./nashi-partnery.html">Наши партнеры</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./strahovye-organizacii.html">Страховые организации ОМС</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./otzyvy.html">Отзывы</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Отделения</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./konsultativno-diagnosticheskoe.html">Консультативно-диагностическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./somaticheskoe.html">1-ое Соматическое отделение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./oporno-dvigatelnyj-apparat-i-perifericheskaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями опорно-двигательного аппарата и периферической нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./centralnaya-nervnaya-sistema.html">Отделение реабилитации больных с заболеваниями центральной нервной системы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizicheskie-metody.html">Отделение физических методов реабилитации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./fizioterapiya.html">Отделение физиотерапии</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="expert.html">Специалисты</a></li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Пациентам</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pamyatka-pacienta.html">Памятка пациента</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./poryadok-gospitalizacii.html">Порядок госпитализации</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./podgotovka-k-issledovaniyam.html">Подготовка к исследованиям</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./kruglosutochnyj-stacionar.html">Круглосуточный стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./dnevnoj-stacionar.html">Дневной стационар</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./razmeshchenie.html">Размещение</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./pitanie.html">Питание</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mineralnaya-voda.html">Минеральная вода и рапа</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./shkola-zdorovya.html">Школа здоровья</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item with-submenu"><span class="main-nav__link">Платные услуги</span>
+                <ul class="submenu-nav">
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./prejskurant-uslug.html">Прейскурант услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./usloviya-okazaniya-platnyh-uslug.html">Условия оказания платных услуг</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./bassejn.html">Бассейн</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./balneolechebnica.html">Бальнеолечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./gryazelechebnica.html">Грязелечебница</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./robots.html">Роботы</a></li>
+                  <li class="submenu-nav__item"><span class="icon-right-open-mini"></span><a href="./mekhanoterapiya.html">Механотерапия</a></li>
+                </ul><span class="icon-down-open submenu-nav__toggle"></span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="page-header">
+          <div class="container">
+            <h1>Вакансии</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item disable-item"><a href="index.html">О центре</a></li>
+                <li class="breadcrumb-item active"><a href="#">Вакансии</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <section class="page-body">
+          <div class="container">
+            <aside class="section-menu">
+              <ul class="list">
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_1')" id="defaultOpen">Соискателям</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_2')">Врач-физиотерапевт</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_3')">Врач по лечебной физкультуре</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_4')">Врач-рентгенолог</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_5')">Врач-терапевт</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_6')">Врач-терапевт</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_7')">Врач-офтальмолог</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_8')">Врач-офтальмолог</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_9')">Врач-кардиолог</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_10')">Врач-оториноларинголог</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_11')">Процедурная медсестра</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_12')">Медицицнская медсестра</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_13')">Рентгенлаборант</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_14')">Мойщица посуды</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_15')">Электрогазосварщик</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_16')">Подсобный рабочий</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_17')">Чистильщик плодоовощей</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_18')">Уборщик производственных помещений</button>
+                </li>
+                <li class="item">
+                  <button class="item-button" type="button" onclick="openContent(event, 'tab_19')">Мойщица посуды - уборщица</button>
+                </li>
+              </ul>
+              <button class="aside-button" type="button">Меню</button>
+            </aside>
+            <main class="section-body enabled-menu">
+              <div class="section-content" id="tab_1">
+                <h2 class="content-title">Соискателям</h2>
+                <p class="content-text">Запись на собеседование принимается по телефону в установленное время. Так же по электронной почте можно прислать резюме на рассмотрение.</p>
+                <p class="content-text content-text__title">Телефон:</p>
+                <p class="content-text content-text__description"><a href="tel:+74959261196">+7 (495) 926-11-96</a>, доб 117</p>
+                <p class="content-text content-text__title">Электронная почта:</p>
+                <p class="content-text content-text__description"><a href="mailto:kadri.clinica@yandex.ru">kadri.clinica@yandex.ru</a></p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Понедельник-четверг, 9:00 - 16:30</p>
+                <p class="content-text content-text__description">Пятница, 9:00 - 15:30</p>
+              </div>
+              <div class="section-content" id="tab_2">
+                <h2 class="content-title">Врач-физиотерапевт</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Прием пациентов</p>
+                <p class="content-text content-text__description">- Назначение процедур</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От двух лет</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат по специальности</p>
+              </div>
+              <div class="section-content" id="tab_3">
+                <h2 class="content-title">Врач по лечебной физкультуре</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От двух лет</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат по специальности</p>
+              </div>
+              <div class="section-content" id="tab_4">
+                <h2 class="content-title">Врач-рентгенолог</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат по специальности</p>
+              </div>
+              <div class="section-content" id="tab_5">
+                <h2 class="content-title">Врач-терапевт</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Проведение УЗ исследований сердца и сосудов</p>
+                <p class="content-text content-text__description">- Оформление протокола исследований</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">- Действующий сертификат "Функциональная диагностика"</p>
+                <p class="content-text content-text__description">- Медицинская книжка</p>
+              </div>
+              <div class="section-content" id="tab_6">
+                <h2 class="content-title">Врач-терапевт</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">- Действующий сертификат "Терапия"</p>
+                <p class="content-text content-text__description">- Медицинская книжка</p>
+              </div>
+              <div class="section-content" id="tab_7">
+                <h2 class="content-title">Врач-офтальмолог</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_8">
+                <h2 class="content-title">Врач-офтальмолог</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Подработка</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_9">
+                <h2 class="content-title">Врач-кардиолог</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Подработка</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_10">
+                <h2 class="content-title">Врач-оториноларинголог</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Подработка</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от/до ст. Одинцово и от/до ст. Перхушково, Власиха</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- В соответствии с приказом Минздрава России</p>
+                <p class="content-text content-text__description">- Квалифицированная помощь по своей специальности</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Высшее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_11">
+                <h2 class="content-title">Процедурная медсестра</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">40 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Гибкий</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Пятидневка</p>
+                <p class="content-text content-text__description">- Сокращенный рабочий день</p>
+                <p class="content-text content-text__description">- Корпоративный транспорт от/до ст. Одинцово</p>
+                <p class="content-text content-text__description">- Оформление по ТК</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Заработная плата по договоренности</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Выполнение назначенных врачом процедур</p>
+                <p class="content-text content-text__description">- Ведение необходимой учетной документации</p>
+                <p class="content-text content-text__description">- Санитарно-гигиеническое содержание кабинета</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Среднее специальное</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От одного года</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_12">
+                <h2 class="content-title">Процедурная медсестра</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">от 40 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Сменный</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Ежегодный отпуск 28 календарных дней</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от ст. Перхушково</p>
+                <p class="content-text content-text__description">- Корпоративный транспорт от/до ст. Одинцово</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- Возможно предоставление жилья для иногородних сотрудников</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Ведение карт, медицинские манипуляции</p>
+                <p class="content-text content-text__description">- Соблюдение принципов врачебной этики и деонтологии</p>
+                <p class="content-text content-text__description">- Контроль соблюдения санитарно-гигиенических требований, предъявляемых к организации работы</p>
+                <p class="content-text content-text__description">- Соблюдает правила техники безопасности и производственной санитарии</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Среднее специальное</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_13">
+                <h2 class="content-title">Рентгенлаборант</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">20 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Ежегодный отпуск 28 календарных дней</p>
+                <p class="content-text content-text__description">- Ведомственный автобус от ст. Перхушково</p>
+                <p class="content-text content-text__description">- Корпоративный транспорт от/до ст. Одинцово</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__description">- Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__description">- График работы обсуждается на собеседовании</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">Сертификат специалиста по специальности "Рентгенология"</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Среднее специальное</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Действующий сертификат</p>
+              </div>
+              <div class="section-content" id="tab_14">
+                <h2 class="content-title">Мойщица посуды</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">25 000 - 30 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Сменный</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Режим работы два через два, с 07.00 до 19.00</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">Мытье посуды</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">Среднее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Гражданство РФ</p>
+              </div>
+              <div class="section-content" id="tab_15">
+                <h2 class="content-title">Электрогазосварщик</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">По договоренности</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">Заработная плата по результатам собеседования</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">Выполнение всех электрогазосварочных работ</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">среднее специальное</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">От трех лет</p>
+                <p class="content-text content-text__title">Требования:</p>
+                <p class="content-text content-text__description">Без вредных привычек</p>
+              </div>
+              <div class="section-content" id="tab_16">
+                <h2 class="content-title">Подсобный рабочий</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">30 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Содержание в чистоте подсобных помещений</p>
+                <p class="content-text content-text__description">- Разгрузка, загрузка, перемещение груза вручную или с помощью средств механизации</p>
+                <p class="content-text content-text__description">- Очищение территории, подъездных путей, помещений</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">среднее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+              </div>
+              <div class="section-content" id="tab_17">
+                <h2 class="content-title">Чистильщик плодоовощей</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">28 000 - 30 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Сменный</p>
+                <p class="content-text content-text__title">Условия:</p>
+                <p class="content-text content-text__description">- Два через два, с 7:00 до 19:00</p>
+                <p class="content-text content-text__description">- Обеденный перерыв 1 час</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Очистка и заготовка овощей, сбор пищевых отходов</p>
+                <p class="content-text content-text__description">- Уборка рабочего места, оборудования, производственные ванны, панели, полы</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">среднее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+              </div>
+              <div class="section-content" id="tab_18">
+                <h2 class="content-title">Уборщик производственных помещений</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">25 000 - 30 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Полный рабочий день</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Осуществляет уборку служебных помещений, палат, коридоров, лестниц, санузлов, общественных туалетов</p>
+                <p class="content-text content-text__description">- Удаляет пыль, подметает и моет вручную или с помощью машин и приспособлений стены, полы, потолки, оконные рамы и стекла, дверные блоки, мебель и ковровые изделия</p>
+                <p class="content-text content-text__description">- Чистит и дезинфицирует унитазы, ванны, раковины и другое санитарно-техническое оборудование</p>
+                <p class="content-text content-text__description">- Собирает мусор и относит его в установленное место</p>
+                <p class="content-text content-text__description">- Соблюдает правила санитарии и гигиены в убираемых помещениях</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">среднее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+              </div>
+              <div class="section-content" id="tab_19">
+                <h2 class="content-title">Мойщица посуды - уборщица</h2>
+                <p class="content-text content-text__title">Заработная плата:</p>
+                <p class="content-text content-text__description">20 000 - 25 000 рублей</p>
+                <p class="content-text content-text__title">Характер работ:</p>
+                <p class="content-text content-text__description">На территории работодателя</p>
+                <p class="content-text content-text__title">График работы:</p>
+                <p class="content-text content-text__description">Сменный</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Два через два, с 07:00 до 19:00</p>
+                <p class="content-text content-text__description">- Дружный коллектив</p>
+                <p class="content-text content-text__description">- Бесплатное посещение бассейна для сотрудников</p>
+                <p class="content-text content-text__title">Обязанности:</p>
+                <p class="content-text content-text__description">- Мытье посуды в пищеблоке</p>
+                <p class="content-text content-text__description">- Уборка помещения</p>
+                <p class="content-text content-text__title">Образование:</p>
+                <p class="content-text content-text__description">среднее</p>
+                <p class="content-text content-text__title">Опыт работы:</p>
+                <p class="content-text content-text__description">Неважен</p>
+              </div>
+            </main>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-slider">
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://www.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Министерство<br>здравоохранения<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://www.takzdorovo.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-2.webp"></div>
+                <div class="slider-item__text">Здоровая Россия</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://nok.rosminzdrav.ru/site.html#!/86/9865" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Независимая оценка качества оказания услуг медицинскими организациями</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="http://fss.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-3.webp"></div>
+                <div class="slider-item__text">Фонд социального<br>страхования<br>Российской Федерации</div></a></div>
+            <div class="footer-slider-item"><a class="slider-item-wrapper" href="https://kurort.rosminzdrav.ru/" target="_blank">
+                <div class="slider-item__img"><img src="static/images/content/footer/img-1.webp"></div>
+                <div class="slider-item__text">Государственный реестр курортного фонда Российской Федерации</div></a></div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-info__name">
+              <div class="info__name-logo"><img src="static/images/content/footer/logo_footer.jpg"></div>
+              <div class="info__name-title">Лечебно-реабилитационный<br>клинический центр &laquo;ЮДИНО&raquo;&nbsp;&mdash;<br>филиал ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</div>
+            </div>
+            <div class="footer-info__copyright"><span>&copy;&nbsp;2019&nbsp;ФГБУ &laquo;НМИЦ РК&raquo; Минздрава России</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script>document.getElementById("defaultOpen").click();</script>
+  </body>
+</html>
