@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <h1 class="visually-hidden">Афиша</h1>
+  <main class="articles container">
+    <div class="articles__body">
+      <article class="card articles__card articles__card_large">
+        <header class="card__header">
+          <a class="card__user" href="#">
+          <span class="card__avatar">
+            <img src="img/avatar-1@1x.jpg" srcset="img/avatar-1@2x.jpg 2x" alt="Аватар пользователя" width="28" height="28">
+          </span>
+            JewelJul
+          </a>
+          <a class="card__category" href="#">Выбор редации</a>
+        </header>
+        <div class="card__body">
+          <a class="card__preview card__preview_miniature" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/book-1-desktop@1x.jpg 1x, img/book-1-desktop@2x.jpg 2x">
+              <img src="img/book-1-mobile@1x.png" srcset="img/book-1-mobile@2x.png 2x" alt="Обложка книги" width="288" height="184">
+            </picture>
+            <div class="card__date">
+              <div class="card__day">24</div>
+              <div class="card__month">мая</div>
+              <div class="card__time">19:30</div>
+            </div>
+          </a>
+          <div class="card__meta">
+            <a class="card__info" href="#">Москва</a>
+            <a class="card__tag" href="#">Лекции и экскурсии</a>
+          </div>
+          <h2 class="card__title"><a href="#">Pioner Talks: Разложение лирического героя.
+            Случай Елизарова</a></h2>
+        </div>
+      </article>
+      <article class="card articles__card">
+        <header class="card__header">
+          <a class="card__user" href="#">
+          <span class="card__avatar">
+            <img src="img/avatar-2@1x.jpg" srcset="img/avatar-2@2x.jpg 2x" alt="Аватар пользователя" width="28" height="28">
+          </span>
+            Kontakt
+          </a>
+        </header>
+        <div class="card__body">
+          <a class="card__preview" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/image-1-desktop@1x.jpg 1x, img/image-1-desktop@2x.jpg 2x">
+              <img src="img/image-1-mobile@1x.jpg" srcset="img/image-1-mobile@2x.jpg 2x" alt="Маскарандая маска" width="288" height="184">
+            </picture>
+            <div class="card__date">
+              <div class="card__day">4</div>
+              <div class="card__month">мая</div>
+              <div class="card__time">01:00</div>
+            </div>
+          </a>
+          <div class="card__meta">
+            <a class="card__info card__info_status" href="#">Online</a>
+            <a class="card__tag" href="#">Лекции и экскурсии</a>
+          </div>
+          <h2 class="card__title"><a href="#">Совместные чтения пьес. Апрель 2019</a></h2>
+        </div>
+      </article>
+      <article class="card articles__card">
+        <header class="card__header">
+          <a class="card__user" href="#">
+          <span class="card__avatar">
+            <img src="img/avatar-3@1x.png" srcset="img/avatar-3@2x.png 2x" alt="Аватар пользователя" width="28" height="28">
+          </span>
+            info
+          </a>
+        </header>
+        <div class="card__body">
+          <a class="card__preview" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/book-2-desktop@1x.png 1x, img/book-2-desktop@2x.png 2x">
+              <img src="img/book-2-mobile@1x.png" srcset="img/book-2-mobile@2x.png 2x" alt="Обложка книги" width="288" height="184">
+            </picture>
+            <div class="card__date">
+              <div class="card__day">5</div>
+              <div class="card__month">мая</div>
+              <div class="card__time">13:00</div>
+            </div>
+          </a>
+          <div class="card__meta">
+            <a class="card__info" href="#">Иркутск</a>
+            <a class="card__tag" href="#">Встречи с авторами</a>
+          </div>
+          <h2 class="card__title">
+            <a href="#">Апрельско-майская (35-я) встреча Иркутского клуба &laquo;Книжные нерпы&raquo;</a></h2>
+        </div>
+      </article>
+      <article class="card articles__card">
+        <header class="card__header">
+          <a class="card__user" href="#">
+          <span class="card__avatar">
+            <img src="img/avatar-4@1x.png" srcset="img/avatar-4@2x.png 2x" alt="Аватар пользователя" width="28" height="28">
+          </span>
+            Центрполиграф
+          </a>
+        </header>
+        <div class="card__body">
+          <a class="card__preview" href="#">
+            <p class="card__text">
+              Пешеходная экскурсия &laquo;Ильф, Петров и одесситы...&raquo;
+            </p>
+            <div class="card__date">
+              <div class="card__day">7</div>
+              <div class="card__month">мая</div>
+              <div class="card__time">13:00</div>
+            </div>
+          </a>
+          <div class="card__meta">
+            <a class="card__info" href="#">Иркутск</a>
+            <a class="card__tag" href="#">Встречи с авторами</a>
+          </div>
+        </div>
+      </article>
+      <article class="card articles__card">
+        <header class="card__header">
+          <a class="card__user" href="#">
+          <span class="card__avatar">
+            <img src="img/avatar-3@1x.png" srcset="img/avatar-3@2x.png 2x" alt="Аватар пользователя" width="28" height="28">
+          </span>
+            info
+          </a>
+        </header>
+        <div class="card__body">
+          <a class="card__preview" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/image-2-desktop@1x.jpg 1x, img/image-2-desktop@2x.jpg 2x">
+              <img src="img/image-2-mobile@1x.jpg" srcset="img/image-2-mobile@2x.jpg 2x" alt="Обложка книги" width="288" height="184">
+            </picture>
+            <div class="card__date">
+              <div class="card__day">15</div>
+              <div class="card__month">мая</div>
+              <div class="card__time">13:00</div>
+            </div>
+          </a>
+          <div class="card__meta">
+            <a class="card__info" href="#">Иркутск</a>
+            <a class="card__tag" href="#">Встречи с авторами</a>
+          </div>
+          <h2 class="card__title"><a href="#">Выходной в Переделкине</a></h2>
+        </div>
+      </article>
+    </div>
+    <div class="articles__footer">
+      <a class="articles__button" href="#">Показать еще</a>
+    </div>
+  </main>
+</body>
+</html>
