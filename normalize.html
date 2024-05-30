@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>normalize</title>
+</head>
+<body>
+
+<div><label>
+    Ввод
+    <textarea type="text" id="input" cols="60" rows="20"></textarea>
+</label></div>
+
+<div><label>
+    Вывод
+    <textarea type="text" id="output" cols="60" rows="20"></textarea>
+</label></div>
+<script>
+    const input = document.querySelector('#input');
+    const output = document.querySelector('#output');
+
+    function normalize(str) {
+        // Remove the wrapping <p> tag
+        str = str.replace(/<p>/g, '').replace(/<\/p>/g, '');
+
+        // Split the string into an array of lines
+        let lines = str.split('<br>');
+
+        // Wrap each line in a <p> tag and join them back together
+        let result = lines.map(line => `<p>${line}</p>`).join('');
+
+        return result;
+    }
+
+    input.addEventListener('input', () => {
+        if (input.value === '') {
+            output.value = '';
+        } else {
+            output.value = normalize(input.value);
+        }
+
+    });
+</script>
+</body>
+</html>
